@@ -1,5 +1,5 @@
 
-# Hello RSC – Smoker Status
+# RSC – Smoker Status
 
 ## Brief description
 
