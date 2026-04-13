@@ -1,5 +1,5 @@
 
-# RSC – Smoker Status [RSC-PH3]
+# Hello RSC – Smoker Status
 
 ## Brief description
 
@@ -23,9 +23,9 @@ The following codelists are used
 
 | codelist name in algorithm     | RSC Codelist                |
 |--------------------------------|-----------------------------|
-|  _**active-smoker-codelist**_ | RSC-C2065   |
-|  _**ex-smoker-codelist**_ 	 | RSC-C2066   |
-|  _**non-smoker-codelist**_ 	 | RSC-C2067    | 
+|  _**active-smoker-codelist**_  | RSC-C2065                   |
+|  _**ex-smoker-codelist**_   	 | RSC-C2066                   |
+|  _**non-smoker-codelist**_ 	   | RSC-C2067                   | 
 
 A composite code list _**all-smoker-status-codelist**_ is created as the union of _**active-smoker-codelist**_, _**ex-smoker-codelist**_ and  _**non-smoker-codelist**_  
 
