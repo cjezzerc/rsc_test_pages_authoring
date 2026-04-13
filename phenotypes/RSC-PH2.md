@@ -1,5 +1,5 @@
 
-# BMI categorisation [RSC-PH2]
+# BMI categorisation
 
 ## Overview
 

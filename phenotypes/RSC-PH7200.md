@@ -1,4 +1,4 @@
-# RSC – Influenza Like Illness (WRpt)  [RSC-PH7200]
+# RSC – Influenza Like Illness
 
 ## Brief description
 
@@ -12,15 +12,11 @@ The data for the [RSC Weekly report](https://www.rcgp.org.uk/representing-you/re
 
 ## Pseudocode
 
-The cohort is identified using the template phenotyping algorithm: 
-
-*RSC – C+RD – Weekly Report  [RSC-PH1]*
-
-with parameters
+The cohort is identified using the template phenotype T:RSC-PH1 with parameters
 
 | Parameter               | Description     |
 |-------------------------|-----------------|
-|  _**disease-codelist**_ |   RSC-C7199    | 
+|  _**disease-codelist**_ |   RSC-C7199     | 
 |  _**interval**_         |   28 days       |
 
 See the _**disease-codelist**_ for further information on the definition of this disease.

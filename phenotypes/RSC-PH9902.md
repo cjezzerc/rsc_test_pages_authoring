@@ -1,4 +1,4 @@
-# COVID Suspected (WRpt)  
+# COVID Suspected
 
 ## Brief description
 
@@ -12,11 +12,7 @@ The data for the [RSC Weekly report](https://www.rcgp.org.uk/representing-you/re
 
 ## Pseudocode
 
-The cohort is identified using the template phenotyping algorithm: 
-
-*RSC – C+RD – Weekly Report  [RSC-PH1]*
-
-with parameters
+The cohort is identified using the template phenotype T:RSC-PH1 with parameters
 
 | Parameter               | Description     |
 |-------------------------|-----------------|
