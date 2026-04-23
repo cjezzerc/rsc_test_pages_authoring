@@ -1,6 +1,10 @@
 
 # Diabetes Type 2
 
+## Brief Decription
+
+Identification of subjects with Diabetes Type 2
+
 ## Overview
 
 The intention of the algorithm is to identify the Diabetes Type 2 status of each patient in a dataset at a specified date.

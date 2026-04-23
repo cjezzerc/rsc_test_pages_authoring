@@ -1,6 +1,10 @@
 
 # BMI categorisation
 
+## Brief description
+
+Categorisation of BMI based on categorical codes or numeric observations
+
 ## Overview
 
 This algorithm provides a harmonised categorisation of the BMI for each patient, based on the latest observation within a particular time window. The algorithm allows for the observation being numerical in some cases (e.g. 24.3) and categorical in other cases (e.g. BMI <20), and also for a variety of equivalent categorical concepts being used.
