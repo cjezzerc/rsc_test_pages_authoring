@@ -1,54 +1,47 @@
-# **New cases of condition [T]
+# (aaa) New cases of condition [T]
 
 ## Brief description
 
-Template phenotype for identifying new cases for a specified condition.
+Template phenotype for identifying new cases of a specified condition.
 
 
 ## Overview
 
-The phenotype identifies new cases by applying a minimum interval between events.
+The phenotype identifies new cases by applying a minimum interval between events. 
 
 ## Input
 
-
-- Patient longitudinal record
-  
-
 | Parameter                | Description                                                                               |
 |--------------------------|-------------------------------------------------------------------------------------------|
+| `patient_record`     | A single patient's longitudinal record                                      |
 | `observation_window` | Timeframe within which new cases are to be identified                                     |
 | `condition_codelist` | SNOMED CT codes identifying diagnosis events for the specific condition |
 | `interval`           | Minimum number of days between two diagnosis events for the latter to indicate a new case |
-
-
 
 ## Output
 
 * **Type:** events
 * **Description:**
-  A list of diagnosis events for the condition of interest that are considered to indicate new cases within the observation window.
+  A list of diagnosis events **WHAT IS RETURNED?DATE?INITIATING EVENT?** for the condition of interest that are considered to indicate new cases within the observation window.
+
 
 ## Pseudocode
 
-For a given patient:
-
-* Let `candidate_events` be all events with codes from `condition_codelist` within `observation_window`.
-
+* Let `candidate_events` be all events in `patient_record` with codes from `condition_codelist` within `observation_window`.
 * For each event in `candidate_events`:
-
   * The event is considered to define a new case if:
-
     * There are no prior events from `condition_codelist` in the `interval` days before this event.
-
 * Return the list of all such events.
 
 ## Notes on use
 
-* Applying this phenotype across patients can produce:
-  * event counts (incidence)
-  * patient-level variables (for example, at least one event in list)
-  * cohorts (for example, patients with at least one event)
+* Applying this phenotype across a collection of patients can produce:
+  * case counts (incidence)
+  * patient-level variables (for example, patient has at least one case in list)
+  * cohorts (for example, all patients with at least one case)
+* Why the algorithm is described as returning a list:
+  * In many applications the length of the `observation_window` will be less than `interval`, in which case the list can only ever contain either 0 or 1 cases (for example if the `ovservation-window` is a particular week, and  `interval` is 28 days).
+  *  The algorithm is described as returning a list to cope with applications where the `observation_window` is considerably greater than `interval` and the patient could potentially have more than one case within the `observation-window` (for example if the `observation-window` is a particular calendar year, and  `interval` is 28 days))
 
 ## markdown authoring issues
 
