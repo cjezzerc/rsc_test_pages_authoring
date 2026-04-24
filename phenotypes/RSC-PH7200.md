@@ -1,22 +1,40 @@
-# RSC – Influenza Like Illness
+# **Influenza Like Illness (ILI)
 
 ## Brief description
 
-Identification of new cases of Influenza Like Illness for the RCGP RSC weekly report of Respiratory and Communicable Diseases for England.
+Identification of new episodes of Influenza Like Illness (ILI).
 
 ## Overview
 
-The algorithm identifies the cohort of patients that have a new diagnosis event for Influenza Like Illness within the week of observation.
+This phenotype identifies **new ILI episodes** for an individual patient within a specified observation window.
 
-The data for the [RSC Weekly report](https://www.rcgp.org.uk/representing-you/research-at-rcgp/research-surveillance-centre/public-health-data) are counts of numbers of patients in the cohort, stratified by age and region.
+## Input
+
+- Patient longitudinal record
+- Observation window (for example, week of observation)
+
+## Output
+
+- **Type:** events
+- **Description:**
+  A list of ILI episodes (dates) occurring within the observation window.
 
 ## Pseudocode
 
-The cohort is identified using the template phenotype T:RSC-PH1 with parameters
+This phenotype applies template phenotype **T:RSC-PH1** with parameters:
 
-| Parameter               | Description     |
-|-------------------------|-----------------|
-|  _**disease-codelist**_ |   RSC-C7199     | 
-|  _**interval**_         |   28 days       |
+| Parameter | Value |
+|---|---|
+| `disease_codelist` | RSC-C7199 |
+| `interval` | 28 days |
 
-See the _**disease-codelist**_ for further information on the definition of this disease.
+## Notes on use
+
+- Applying across patients yields:
+  - ILI incidence (number of events)
+  - an ILI cohort (patients with at least one event in the period)
+  - patient-level variables (for example, any ILI in week)
+
+## Disease notes
+
+See the `disease_codelist` for further information on the definition of this disease.

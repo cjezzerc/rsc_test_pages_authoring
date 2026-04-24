@@ -1,33 +1,61 @@
-# RSC – C+RD – Weekly Report
-
+# **New cases of condition [T]
 
 ## Brief description
 
-Template phenotype used in creating the weekly RCGP RSC Communicable and Respiratory Disease Report for England.
+Template phenotype for identifying new cases for a specified condition.
 
-## Template note
-
-This is a template phenotype used in creating the weekly RCGP RSC Communicable and Respiratory Diseases for England report. The specific disease of interest is defined by specifying the codelist in the table below.
-
-The following parameters are specific for each disease of interest, and should be specified by the phenotyping algorithm that uses this template.
-
-| Parameter               | Description                     |
-|-------------------------|---------------------------------|
-|  _**disease-codelist**_ |   A list of SNOMED CT codes that identify a diagnosis event for the disease of interest     | 
-|  _**interval**_         |   The period of time (in days) that must elapse between two diagnosis events for the second event to be considered a new event    |
 
 ## Overview
 
-The algorithm identifies the cohort of patients that have a new diagnosis event for the disease of interest within the week of observation.
+The phenotype identifies new cases by applying a minimum interval between events.
 
-The data for the [RSC Weekly report](https://www.rcgp.org.uk/representing-you/research-at-rcgp/research-surveillance-centre/public-health-data) are counts of numbers of patients in the cohort, stratified by age and region.
+## Input
+
+
+- Patient longitudinal record
+  
+
+| Parameter                | Description                                                                               |
+|--------------------------|-------------------------------------------------------------------------------------------|
+| `observation_window` | Timeframe within which new cases are to be identified                                     |
+| `condition_codelist` | SNOMED CT codes identifying diagnosis events for the specific condition |
+| `interval`           | Minimum number of days between two diagnosis events for the latter to indicate a new case |
+
+
+
+## Output
+
+* **Type:** events
+* **Description:**
+  A list of diagnosis events for the condition of interest that are considered to indicate new cases within the observation window.
 
 ## Pseudocode
 
-* Patients are included in the cohort if
-        
-    * (i) The patient has at least one event from _**disease-codelist**_ within the week of observation 
-        
-    * AND
-        
-    * (ii) The patient has no events from _**disease-codelist**_ in the period of _**interval**_ days before that event
+For a given patient:
+
+* Let `candidate_events` be all events with codes from `condition_codelist` within `observation_window`.
+
+* For each event in `candidate_events`:
+
+  * The event is considered to define a new case if:
+
+    * There are no prior events from `condition_codelist` in the `interval` days before this event.
+
+* Return the list of all such events.
+
+## Notes on use
+
+* Applying this phenotype across patients can produce:
+  * event counts (incidence)
+  * patient-level variables (for example, at least one event in list)
+  * cohorts (for example, patients with at least one event)
+
+## markdown authoring issues
+
+* use of events in abstract sense to denote a new case, and in concrete sense of a record in the EPR is muddled and needs fixing
+* lots of repetition (plus template notes can go if have (Template phenotype) in title)
+  
+## Template note
+
+Section will be removed
+

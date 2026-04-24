@@ -19,48 +19,48 @@ The following parameters are required:
 
 | Parameter         | Description                                   |
 |-------------------|-----------------------------------------------|
-| _**start-observation-period**_ | The earliest date of observations to be considered |
-| _**end-observation-period**_   | The latest date of observations to be considered   |
+| `start_observation_period` | The earliest date of observations to be considered |
+| `end_observation_period`   | The latest date of observations to be considered   |
 
 The following non overlapping codelists are used
 
 | codelist name in algorithm     | RSC Codelist                |
 |--------------------------------|-----------------------------|
-| _**bmi-lt20-codelist**_     |	RSC-C????   |
-| _**bmi-20-24.9-codelist**_     |	RSC-C1502   |
-| _**bmi-25-29.9-codelist**_	   |  RSC-C1504   |
-| _**bmi-30-39.9-codelist**_	   |  RSC-C1503   |
-| _**bmi-ge40-codelist**_	       |  RSC-C1505   |
-| _**bmi-obs-entity-codelist**_  |  RSC-C5022  |
+| `bmi_lt20_codelist`     |	RSC-C????   |
+| `bmi_20_24.9_codelist`     |	RSC-C1502   |
+| `bmi_25_29.9_codelist`	   |  RSC-C1504   |
+| `bmi_30_39.9_codelist`	   |  RSC-C1503   |
+| `bmi_ge40_codelist`	       |  RSC-C1505   |
+| `bmi_obs_entity_codelist`  |  RSC-C5022  |
 
-* A composite code list _**all-bmi-status-codelist**_ is created as the union of the six codelists in the table.
+* A composite code list `all_bmi_status_codelist` is created as the union of the six codelists in the table.
 
 * A results table is initialised with columns of "patient-id" and "computed-current-bmi-status"
 
 * For each patient
 
-    * _**patient-id**_ = Pseudonymised patient identifer
+    * `patient_id` = Pseudonymised patient identifer
 
-    * _**most-recent-bmi**_ = The most recent event for that patient with a code from _**all-bmi-status-codelist**_, and with an observation date in the inclusive period _**start-observation-period**_ to  _**end-observation-period**_
-    * if _**most_recent_bmi**_ is from the codelist _**bmi-obs-entity-codelist**_ then _**bmi_value**_ is set to the numeric value associated with the event
+    * `most_recent_bmi` = The most recent event for that patient with a code from `all_bmi_status_codelist`, and with an observation date in the inclusive period `start_observation_period` to  `end_observation_period`
+    * if `most_recent_bmi` is from the codelist `bmi_obs_entity_codelist` then `bmi_value` is set to the numeric value associated with the event
 
-    * _**computed-current-bmi-status**_ is set according to the following table
+    * `computed_current_bmi_status` is set according to the following table
 
-      | _**most-recent-bmi**_ concept is from ..| _**bmi_value**_ |	computed-current-bmi-status  | SNOMED | OMOP | Term |
+      | `most_recent_bmi` concept is from ..| `bmi_value` |	computed-current-bmi-status  | SNOMED | OMOP | Term |
       |--|--|--|--|--|--|
-      | _**bmi-lt20-codelist**_                 |	        | BMI_LT20     | 310252000 | 4147565 | Body mass index less than 20   |
-      | _**bmi-obs-entity-codelist**_           |	<20	    | ""           | ""        | ""      | ""                             |
-      | _**bmi-20-24.9-codelist**_              |	      	| BMI_20-24.9  | 412768003 | 4135421 | Body mass index 20-24 - normal |
-      | _**bmi-obs-entity-codelist**_           |	20-24.9	| ""           | ""        | ""      | ""                             |
-      | _**bmi-25-29.9-codelist**_	            |       	| BMI_25-29.9  | etc
-      | _**bmi-obs-entity-codelist**_         	| 25-29.9	| ""           |
-      | _**bmi-30-39.9-codelist**_	            |     	  | BMI_30-39.9  |
-      | _**bmi-obs-entity-codelist**_           | 30-39.9 | ""           |
-      | _**bmi-ge40-codelist**_	                |      	  | BMI_GE40     |
-      | _**bmi-obs-entity-codelist**_           | >40     | ""           |
+      | `bmi_lt20_codelist`                 |	        | BMI_LT20     | 310252000 | 4147565 | Body mass index less than 20   |
+      | `bmi_obs_entity_codelist`           |	<20	    | ""           | ""        | ""      | ""                             |
+      | `bmi_20_24.9_codelist`              |	      	| BMI_20-24.9  | 412768003 | 4135421 | Body mass index 20-24 - normal |
+      | `bmi_obs_entity_codelist`           |	20-24.9	| ""           | ""        | ""      | ""                             |
+      | `bmi_25_29.9_codelist`	            |       	| BMI_25-29.9  | etc
+      | `bmi_obs_entity_codelist`         	| 25-29.9	| ""           |
+      | `bmi_30_39.9_codelist`	            |     	  | BMI_30-39.9  |
+      | `bmi_obs_entity_codelist`           | 30-39.9 | ""           |
+      | `bmi_ge40_codelist`	                |      	  | BMI_GE40     |
+      | `bmi_obs_entity_codelist`           | >40     | ""           |
       | no event found from any codelist        |         | UNKNOWN      | 	261665006	| 4129922 | Unknown |
 
 
-    * The tuple (_**patient-id**_, _**computed-current-bmi-status**_) is added as a row to the results table
+    * The tuple (`patient_id`, `computed_current_bmi_status`) is added as a row to the results table
 
 

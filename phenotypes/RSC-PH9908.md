@@ -16,7 +16,7 @@ The cohort is identified using the template phenotype T:RSC-PH1 with parameters
 
 | Parameter               | Description     |
 |-------------------------|-----------------|
-|  _**disease-codelist**_ |   RSC-C7205    | 
-|  _**interval**_         |   28?? days       |
+|  `disease_codelist` |   RSC-C7205    | 
+|  `interval`         |   28?? days       |
 
-See the _**disease-codelist**_ for further information on the definition of this disease.
+See the `disease_codelist` for further information on the definition of this disease.

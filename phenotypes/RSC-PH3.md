@@ -1,50 +1,60 @@
 
-# RSC – Smoker Status
+# **Smoking Status
 
 ## Brief description
 
-Identification of current smoker status
+Determination of smoking status at a specified date.
 
 ## Overview
 
-The intention of the algorithm is to identify the smoker status of each patient in a dataset at a specified date.
+This phenotype determines the smoking status of an individual patient based on their most recent recorded observation.
 
-The algorithm creates a table containing a standard code for each patient based on the most recent observation regarding smoker status.
+## Input
+
+- Patient longitudinal record
+- `status_date`
+
+## Output
+
+- **Type:** attribute
+- **Description:**
+  Smoking status at the specified date (SMOKER / EX-SMOKER / NON-SMOKER / UNKNOWN).
+
+## Parameters
+
+| Parameter | Description |
+|---|---|
+| `status_date` | Date at which status is determined |
+
+## Codelists
+
+| Name in algorithm | RSC Codelist |
+|---|---|
+| `active_smoker_codelist` | RSC-C2065 |
+| `ex_smoker_codelist` | RSC-C2066 |
+| `non_smoker_codelist` | RSC-C2067 |
+
+A composite codelist `all_smoker_status_codelist` is defined as the union of `active_smoker_codelist`, `ex_smoker_codelist` and `non_smoker_codelist`.
 
 ## Pseudocode
 
-The following parameter is required:
+For a given patient:
 
-| Parameter         | Description                                   |
-|-------------------|-----------------------------------------------|
-| _**status-date**_ | The date at which the status is to determined |
+* Let `most_recent_status` be the most recent event with a code from `all_smoker_status_codelist` on or before `status_date`.
 
-The following codelists are used
+* If such an event exists:
 
-| codelist name in algorithm     | RSC Codelist                |
-|--------------------------------|-----------------------------|
-|  _**active-smoker-codelist**_  | RSC-C2065                   |
-|  _**ex-smoker-codelist**_   	 | RSC-C2066                   |
-|  _**non-smoker-codelist**_ 	   | RSC-C2067                   | 
+  * If the code is in `active_smoker_codelist` -> return **SMOKER**
+  * If the code is in `ex_smoker_codelist` -> return **EX-SMOKER**
+  * If the code is in `non_smoker_codelist` -> return **NON-SMOKER**
 
-A composite code list _**all-smoker-status-codelist**_ is created as the union of _**active-smoker-codelist**_, _**ex-smoker-codelist**_ and  _**non-smoker-codelist**_  
+* Otherwise:
 
-* A results table is initialised with columns of "patient-id" and "computed-current-status"
-* For each patient
+  * Return **UNKNOWN**
 
-    * _**patient-id**_ = Pseudonymised patient identifer
+## Notes on use
 
-    * _**most-recent-status**_ = The most recent event for that patient with a code from _**all-smoker-status-codelist**_ with an observation date up to and including the _**status-date**_
-    * If 
-        * such an event can be found then _**computed-current-status**_ is calculated according to the following table
-
-          | Codelist that _**most-recent-status**_ is a member of | _**computed-current-status**_                | 
-          |--------------------------------|-----------------------------|
-          |  _**active-smoker-codelist**_  | SMOKER       |
-          |  _**ex-smoker-codelist**_ 	   | EX-SMOKER    |
-          |  _**non-smoker-codelist**_ 	   | NON-SMOKER   | 
-
-        * otherwise _**computed-current-status**_ is set to UNKNOWN
-    * The tuple (_**patient-id**_, _**computed-current-status**_) is added as a row to the results table
-
-
+- Applying across patients yields:
+  - distributions of smoking status
+  - cohorts (for example, current smokers)
+  - covariates for analysis
