@@ -23,7 +23,12 @@ The template requires these parameters to be specified:
 | `positive_codelist`  | `dementia_combined`                     |
 | `negative_codelist`  | _not used_                              |
 
-`dementia_combined` is the union of the codesets RSC-C2002 and RSC-C6371
+`dementia_combined` is the union of the following codelists:
+
+| Codelist |
+|----------|
+| RSC-C2002 |
+| RSC-C6371 |
 
 ## Pseudocode
 

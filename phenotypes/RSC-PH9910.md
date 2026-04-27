@@ -25,7 +25,12 @@ The template requires these parameters to be specified:
 | `condition_codelist` | `ecld_combined`                         |
 | `interval`           | 28 days                                 |
 
-`ecld_combined` is the union of the codesets RSC-C7215 and RSC-C7199
+`ecld_combined` is the union of the following codelists:
+
+| Codelist |
+|----------|
+| RSC-C7215 |
+| RSC-C7199 |
 
 ## Pseudocode
 

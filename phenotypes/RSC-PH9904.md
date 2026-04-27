@@ -37,4 +37,4 @@ See the codelists for further information on the definition of this condition.
 
 ## Assumptions
 
-Ischaemic heart disease is treated as a **persistent condition** (once diagnosed, remains present).
+Ischaemic heart disease is treated as a persistent condition (once diagnosed, remains present).

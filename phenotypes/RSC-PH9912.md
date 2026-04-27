@@ -25,7 +25,14 @@ The template requires these parameters to be specified:
 | `condition_codelist` | `ari_combined`                          |
 | `interval`           | 28 days                                 |
 
-`ari_combined` is the union of the codesets RSC-C7211, RSC-C7205, RSC-C7215 and RSC-C7199
+`ari_combined` is the union of the following codelists:
+
+| Codelist |
+|----------|
+| RSC-C7211 |
+| RSC-C7205 |
+| RSC-C7215 |
+| RSC-C7199 |
 
 ## Pseudocode
 

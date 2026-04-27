@@ -22,7 +22,7 @@ The template requires these parameters to be specified:
 | `patient_record`     | _To be provided on execution_           |   
 | `status_date`        | _To be specified on execution_          |
 | `positive_codelist`  | RSC-C2048                             |
-| `negative_codelist`  | RSC-7230                              |
+| `negative_codelist`  | RSC-C7230                              |
 
 ## Pseudocode
 

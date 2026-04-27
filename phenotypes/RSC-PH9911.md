@@ -25,7 +25,12 @@ The template requires these parameters to be specified:
 | `condition_codelist` | `lrti_combined`                         |
 | `interval`           | 28 days                                 |
 
-`lrti_combined` is the union of the codesets RSC-C7211 and RSC-C7205
+`lrti_combined` is the union of the following codelists:
+
+| Codelist |
+|----------|
+| RSC-C7211 |
+| RSC-C7205 |
 
 ## Pseudocode
 

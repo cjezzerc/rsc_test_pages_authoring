@@ -38,4 +38,4 @@ See the codelists for further information on the definition of this condition.
 
 ## Assumptions
 
-COPD is treated as a **persistent condition** (once diagnosed, remains present).
+COPD is treated as a persistent condition (once diagnosed, remains present).
