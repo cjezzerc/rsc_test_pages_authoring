@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of exacerbation of chronic lung disease (ECLD).
+Identification of new cases of exacerbation of chronic lung disease (ECLD). (**partial definition**!!)
 
 ## Overview
 
