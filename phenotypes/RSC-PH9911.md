@@ -12,7 +12,7 @@ LRTI encompasses acute bronchitis and acute pneumonia.
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH1**.
+This phenotype applies template phenotype T:RSC-PH1.
 
 See the template for details of the algorithm.
 

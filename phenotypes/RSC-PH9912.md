@@ -12,7 +12,7 @@ ARI encompasses lower respiratory tract infections (LRTI) and exacerbations of c
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH1**.
+This phenotype applies template phenotype T:RSC-PH1.
 
 See the template for details of the algorithm.
 

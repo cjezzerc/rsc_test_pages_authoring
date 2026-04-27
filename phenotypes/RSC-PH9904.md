@@ -10,7 +10,7 @@ This phenotype determines whether an individual patient has ischaemic heart dise
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH4**.
+This phenotype applies template phenotype T:RSC-PH4.
 
 See the template for details of the algorithm.
 

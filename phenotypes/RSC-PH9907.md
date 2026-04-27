@@ -10,7 +10,7 @@ This phenotype identifies new cases of acute bronchitis for an individual patien
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH1**.
+This phenotype applies template phenotype T:RSC-PH1.
 
 See the template for details of the algorithm.
 

@@ -11,7 +11,7 @@ This phenotype determines whether an individual patient has Diabetes Type 2 at a
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH4**.
+This phenotype applies template phenotype T:RSC-PH4.
 
 See the template for details of the algorithm.
 

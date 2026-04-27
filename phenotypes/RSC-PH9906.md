@@ -10,7 +10,7 @@ This phenotype determines whether an individual patient has dementia at a given 
 
 ## Template usage
 
-This phenotype applies template phenotype **T:RSC-PH4**.
+This phenotype applies template phenotype T:RSC-PH4.
 
 See the template for details of the algorithm.
 
