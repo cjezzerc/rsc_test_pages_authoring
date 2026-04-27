@@ -1,22 +1,37 @@
-# RSC – Acute pneumonia
+# Acute Pneumonia
 
 ## Brief description
 
-Identification of new cases of acute pneumonia for the RCGP RSC weekly report of Respiratory and Communicable Diseases for England.
+Identification of new cases of acute pneumonia.
 
 ## Overview
 
-The algorithm identifies the cohort of patients that have a new diagnosis event of acute pneumonia within the week of observation.
+This phenotype identifies new cases of acute pneumonia for an individual patient within a specified observation window.
 
-The data for the [RSC Weekly report](https://www.rcgp.org.uk/representing-you/research-at-rcgp/research-surveillance-centre/public-health-data) are counts of numbers of patients in the cohort, stratified by age and region.
+## Template usage
+
+This phenotype applies template phenotype **T:RSC-PH1**.
+
+See the template for details of the algorithm.
+
+The template requires these parameters to be specified:
+
+| Parameter            | Value                                   |
+|----------------------|-----------------------------------------|
+| `patient_record`     | _To be provided on execution_           |   
+| `observation_window` | _To be specified on execution_          |
+| `condition_codelist` | RSC-C7205                               |
+| `interval`           | 28 days                                 |
+
 
 ## Pseudocode
 
-The cohort is identified using the template phenotype T:RSC-PH1 with parameters
+See template
 
-| Parameter               | Description     |
-|-------------------------|-----------------|
-|  `disease_codelist` |   RSC-C7205    | 
-|  `interval`         |   28?? days       |
+## Notes on use
 
-See the `disease_codelist` for further information on the definition of this disease.
+See template
+
+## Disease notes
+
+See the `condition_codelist` for further information on the definition of this condition.

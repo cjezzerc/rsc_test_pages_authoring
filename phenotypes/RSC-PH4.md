@@ -1,8 +1,8 @@
-# (aaa) Condition status [T]
+# Condition status [T]
 
 ## Brief description
 
-Template phenotype for identifying the status of a patient for a specified condition at a certain date.
+Template phenotype for identifying the status of subject for a specified condition at a certain date
 
 ## Overview
 
@@ -13,9 +13,9 @@ This phenotype determines the status of an individual patient at a particular da
 | Parameter                | Description                                                                                  |
 |--------------------------|---------------------------------------------------------------------------------------------------|
 | `patient_record`     | A single patient's longitudinal record                                                                |
-| `status_date` | Date at which the status is to be determined                                                                    |
-| `positive_codelist` | SNOMED CT codes indicating presence of the specific condition                                |
-| `negative_codelist` | SNOMED CT codes indicating absence (including recovery from) the specific condition (_optional_)              |
+| `status_date` | Date at which the status is to be determined                                                                 |
+| `positive_codelist` | SNOMED CT codes indicating presence of the specific condition                                          |
+| `negative_codelist` | SNOMED CT codes indicating absence (including recovery from) the specific condition (_optional_)       |
 
 
 ## Output

@@ -1,5 +1,5 @@
 
-# (aaa) Smoking Status
+# Smoking Status
 
 ## Brief description
 

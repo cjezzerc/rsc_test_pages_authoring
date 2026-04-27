@@ -1,4 +1,4 @@
-# (aaa) COPD Exacerbation
+# COPD Exacerbation
 
 ## Brief description
 
@@ -6,7 +6,7 @@ Identification of new cases of Exacerbation of COPD.
 
 ## Overview
 
-This phenotype identifies new cases of exacerbation for an individual patient within a specified observation window.
+This phenotype identifies new cases of exacerbation of COPD for an individual patient within a specified observation window.
 
 ## Template usage
 
@@ -33,4 +33,4 @@ See template
 
 ## Disease notes
 
-See the `disease_codelist` for further information on the definition of this condition.
+See the `condition_codelist` for further information on the definition of this condition.

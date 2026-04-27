@@ -1,14 +1,14 @@
-# Exacerbation of Chronic Lung Disease (ECLD)
+# Acute Respiratory Infection (ARI)
 
 ## Brief description
 
-Identification of new cases of exacerbation of chronic lung disease (ECLD).
+Identification of new cases of acute respiratory infection (ARI).
 
 ## Overview
 
-This phenotype identifies new cases of exacerbation of chronic lung disease for an individual patient within a specified observation window.
+This phenotype identifies new cases of acute respiratory infection for an individual patient within a specified observation window.
 
-ECLD encompasses exacerbations of asthma and exacerbations of COPD.
+ARI encompasses lower respiratory tract infections (LRTI) and exacerbations of chronic lung disease (ECLD).
 
 ## Template usage
 
@@ -22,10 +22,10 @@ The template requires these parameters to be specified:
 |----------------------|-----------------------------------------|
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
-| `condition_codelist` | `ecld_combined`                         |
+| `condition_codelist` | `ari_combined`                          |
 | `interval`           | 28 days                                 |
 
-`ecld_combined` is the union of the codesets RSC-C7215 and RSC-C7199
+`ari_combined` is the union of the codesets RSC-C7211, RSC-C7205, RSC-C7215 and RSC-C7199
 
 ## Pseudocode
 

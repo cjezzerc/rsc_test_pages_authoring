@@ -1,66 +1,77 @@
-
-# BMI categorisation
+# BMI Categorisation
 
 ## Brief description
 
-Categorisation of BMI based on categorical codes or numeric observations
+Categorisation of BMI at a specified date using either categorical BMI codes or numeric BMI observations.
 
 ## Overview
 
-This algorithm provides a harmonised categorisation of the BMI for each patient, based on the latest observation within a particular time window. The algorithm allows for the observation being numerical in some cases (e.g. 24.3) and categorical in other cases (e.g. BMI <20), and also for a variety of equivalent categorical concepts being used.
+This phenotype determines BMI category for an individual patient at a specified date based on their most recent relevant BMI record within an observation window.
 
-The algorithm creates a table containing a standard code for each patient categorising BMI into bands of <20, 20-24.9, 25-29.9, 30-39.9 and 40+
+It supports two recording styles:
 
-?? Is this the cateogisation strategy intended? Are these the categories we want (e.g. could separate 30-39.9 into two categories Obese I and Obese II; or have a category of <16; hoever that leads to more ambiguities, e.g. is Obese Obese I or II ?)
+* Categorical BMI concepts (for example, "BMI 20-24.9")
+* Numeric BMI observations (for example, 24.3)
+
+The output category is harmonised into one of five bands: BMI_LT20, BMI_20_24_9, BMI_25_29_9, BMI_30_39_9, BMI_GE40, or UNKNOWN.
+
+## Input
+
+| Parameter                 | Description/Value/Identifier                            |
+|---------------------------|----------------------------------------------|
+| `patient_record`          | A single patient's longitudinal record (_provided at execution time_) |
+| `status_date`             | Date at which BMI category is to be determined (_specified at runtime_) |
+| `start_observation_period`| Earliest date at which observations are still to be considered relevant |
+| `bmi_lt20_codelist`       | RSC-C???? |
+| `bmi_20_24.9_codelist`    | RSC-C1502 |
+| `bmi_25_29.9_codelist`    | RSC-C1504 |
+| `bmi_30_39.9_codelist`    | RSC-C1503 |
+| `bmi_ge40_codelist`       | RSC-C1505 |
+| `bmi_obs_entity_codelist` | RSC-C5022 |
+
+## Output
+
+* **Type:** attribute
+* **Description:**
+  BMI category at the specified date (BMI_LT20 / BMI_20_24_9 / BMI_25_29_9 / BMI_30_39_9 / BMI_GE40 / UNKNOWN).
 
 ## Pseudocode
 
-The following parameters are required:
+A composite codelist `all_bmi_status_codelist` is defined as the union of:
 
-| Parameter         | Description                                   |
-|-------------------|-----------------------------------------------|
-| `start_observation_period` | The earliest date of observations to be considered |
-| `end_observation_period`   | The latest date of observations to be considered   |
+* `bmi_lt20_codelist`
+* `bmi_20_24.9_codelist`
+* `bmi_25_29.9_codelist`
+* `bmi_30_39.9_codelist`
+* `bmi_ge40_codelist`
+* `bmi_obs_entity_codelist`
 
-The following non overlapping codelists are used
+* Let `most_recent_bmi` be the most recent event in `patient_record` with a code from `all_bmi_status_codelist` and an observation date in the inclusive interval `start_observation_period` to `status_date`.
 
-| codelist name in algorithm     | RSC Codelist                |
-|--------------------------------|-----------------------------|
-| `bmi_lt20_codelist`     |	RSC-C????   |
-| `bmi_20_24.9_codelist`     |	RSC-C1502   |
-| `bmi_25_29.9_codelist`	   |  RSC-C1504   |
-| `bmi_30_39.9_codelist`	   |  RSC-C1503   |
-| `bmi_ge40_codelist`	       |  RSC-C1505   |
-| `bmi_obs_entity_codelist`  |  RSC-C5022  |
+* If no such event exists:
 
-* A composite code list `all_bmi_status_codelist` is created as the union of the six codelists in the table.
+  * Return **UNKNOWN**
 
-* A results table is initialised with columns of "patient-id" and "computed-current-bmi-status"
+* Otherwise, if the event code is in `bmi_obs_entity_codelist`:
 
-* For each patient
+  * Let `bmi_value` be the numeric value associated with the event
+  * If `bmi_value < 20` -> return **BMI_LT20**
+  * If `20 <= bmi_value < 25` -> return **BMI_20_24_9**
+  * If `25 <= bmi_value < 30` -> return **BMI_25_29_9**
+  * If `30 <= bmi_value < 40` -> return **BMI_30_39_9**
+  * If `bmi_value >= 40` -> return **BMI_GE40**
 
-    * `patient_id` = Pseudonymised patient identifer
+* Otherwise,
 
-    * `most_recent_bmi` = The most recent event for that patient with a code from `all_bmi_status_codelist`, and with an observation date in the inclusive period `start_observation_period` to  `end_observation_period`
-    * if `most_recent_bmi` is from the codelist `bmi_obs_entity_codelist` then `bmi_value` is set to the numeric value associated with the event
+  * If the event code is in `bmi_lt20_codelist` -> return **BMI_LT20**
+  * If the event code is in `bmi_20_24.9_codelist` -> return **BMI_20_24_9**
+  * If the event code is in `bmi_25_29.9_codelist` -> return **BMI_25_29_9**
+  * If the event code is in `bmi_30_39.9_codelist` -> return **BMI_30_39_9**
+  * If the event code is in `bmi_ge40_codelist` -> return **BMI_GE40**
 
-    * `computed_current_bmi_status` is set according to the following table
+## Notes on use
 
-      | `most_recent_bmi` concept is from ..| `bmi_value` |	computed-current-bmi-status  | SNOMED | OMOP | Term |
-      |--|--|--|--|--|--|
-      | `bmi_lt20_codelist`                 |	        | BMI_LT20     | 310252000 | 4147565 | Body mass index less than 20   |
-      | `bmi_obs_entity_codelist`           |	<20	    | ""           | ""        | ""      | ""                             |
-      | `bmi_20_24.9_codelist`              |	      	| BMI_20-24.9  | 412768003 | 4135421 | Body mass index 20-24 - normal |
-      | `bmi_obs_entity_codelist`           |	20-24.9	| ""           | ""        | ""      | ""                             |
-      | `bmi_25_29.9_codelist`	            |       	| BMI_25-29.9  | etc
-      | `bmi_obs_entity_codelist`         	| 25-29.9	| ""           |
-      | `bmi_30_39.9_codelist`	            |     	  | BMI_30-39.9  |
-      | `bmi_obs_entity_codelist`           | 30-39.9 | ""           |
-      | `bmi_ge40_codelist`	                |      	  | BMI_GE40     |
-      | `bmi_obs_entity_codelist`           | >40     | ""           |
-      | no event found from any codelist        |         | UNKNOWN      | 	261665006	| 4129922 | Unknown |
-
-
-    * The tuple (`patient_id`, `computed_current_bmi_status`) is added as a row to the results table
-
-
+* Applying this phenotype across a collection of patients can produce:
+  * BMI category distributions
+  * cohorts (for example, BMI_GE40)
+  * patient-level variables (for example, patient is severly obese)

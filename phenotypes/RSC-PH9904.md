@@ -1,29 +1,40 @@
-
-# RSC - Ischaemic Heart Disease (non template version)
+# Ischaemic Heart Disease
 
 ## Brief description
 
-Identification of subjects with Ischaemic Heart Disease
+Identification of ischaemic heart disease status of subject
 
 ## Overview
 
-The intention of the algorithm is to identify subjects with Ischaemic Heart Disease at a specified date.
+This phenotype determines whether an individual patient has ischaemic heart disease at a given date based on prior diagnosis events.
+
+## Template usage
+
+This phenotype applies template phenotype **T:RSC-PH4**.
+
+See the template for details of the algorithm.
+
+The template requires these parameters to be specified:
+
+| Parameter            | Value                                   |
+|----------------------|-----------------------------------------|
+| `patient_record`     | _To be provided on execution_           |   
+| `status_date`        | _To be specified on execution_          |
+| `positive_codelist`  | RSC-C3160                               |
+| `negative_codelist`  | _not used_                              |
 
 ## Pseudocode
 
-The following parameter is required:
+See template
 
-| Parameter         | Description                                   |
-|-------------------|-----------------------------------------------|
-| `status_date` | The date at which the status is to determined |
+## Notes on use
 
-The following codelists are used
+See template
 
-| codelist name in algorithm     | RSC Codelist                |
-|--------------------------------|-----------------------------|
-|  `ischaemic_heart_disease` | RSC-C3160                  |
+## Disease notes
 
-* Patients are included in the cohort if
-        
-    * (i) The patient has at least one event from `ischaemic_heart_disease` at a date up to and including `status_date`
+See the codelists for further information on the definition of this condition.
 
+## Assumptions
+
+Ischaemic heart disease is treated as a **persistent condition** (once diagnosed, remains present).

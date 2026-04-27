@@ -1,30 +1,42 @@
-
 # Dementia
 
 ## Brief description
 
-Identification of subjects with Dementia
+Identification of dementia status of subject
 
 ## Overview
 
-The intention of the algorithm is to identify subjects with Dementia at a specified date.
+This phenotype determines whether an individual patient has dementia at a given date based on prior diagnosis events.
+
+## Template usage
+
+This phenotype applies template phenotype **T:RSC-PH4**.
+
+See the template for details of the algorithm.
+
+The template requires these parameters to be specified:
+
+| Parameter            | Value                                   |
+|----------------------|-----------------------------------------|
+| `patient_record`     | _To be provided on execution_           |   
+| `status_date`        | _To be specified on execution_          |
+| `positive_codelist`  | `dementia_combined`                     |
+| `negative_codelist`  | _not used_                              |
+
+`dementia_combined` is the union of the codesets RSC-C2002 and RSC-C6371
 
 ## Pseudocode
 
-The following parameter is required:
+See template
 
-| Parameter         | Description                                   |
-|-------------------|-----------------------------------------------|
-| `status_date` | The date at which the status is to determined |
+## Notes on use
 
-The following codelists are used
+See template
 
-| codelist name in algorithm     | RSC Codelist                |
-|--------------------------------|-----------------------------|
-|  `dementia` | RSC-C2002                 |
-|  `dementia_meds` | RSC-C6371                 |
+## Disease notes
 
-* Patients are included in the cohort if
-        
-    * (i) The patient has at least one event from `dementia` or `dementia_meds` at a date up to and including `status_date`
+See the codelists for further information on the definition of this condition.
 
+## Assumptions
+
+Dementia is treated as a **persistent condition** (once diagnosed, remains present).

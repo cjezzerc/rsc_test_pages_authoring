@@ -1,9 +1,8 @@
-# (aaa) New cases of condition [T]
+# New cases of condition [T]
 
 ## Brief description
 
 Template phenotype for identifying new cases of a specified condition.
-
 
 ## Overview
 

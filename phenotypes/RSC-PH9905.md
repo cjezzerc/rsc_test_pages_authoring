@@ -1,59 +1,41 @@
 
-# ** Chronic Obstructive Pulmonary Disease (non template version) (COPD)
+# Chronic Obstructive Pulmonary Disease (COPD)
 
 ## Brief description
 
-Identification of COPD status at a specified date.
+Identification of COPD status of subject
 
 ## Overview
 
 This phenotype determines whether an individual patient has COPD at a given date based on prior diagnosis events.
 
-## Markdown authoring issues
+## Template usage
 
-Not sure about the explicit 0,1 business 
+This phenotype applies template phenotype **T:RSC-PH4**.
 
-## Input
+See the template for details of the algorithm.
 
-- Patient longitudinal record
-- `status_date`
+The template requires these parameters to be specified:
 
-## Output
-
-- **Type:** state
-- **Description:**
-  COPD status at the specified date (1 = COPD, 0 = no COPD).
-
-## Parameters
-
-| Parameter | Description |
-|---|---|
-| `status_date` | Date at which status is determined |
-
-## Codelists
-
-| Name in algorithm | RSC Codelist |
-|---|---|
-| `copd` | RSC-C2133 |
+| Parameter            | Value                                   |
+|----------------------|-----------------------------------------|
+| `patient_record`     | _To be provided on execution_           |   
+| `status_date`        | _To be specified on execution_          |
+| `positive_codelist`  | RSC-C2133                               |
+| `negative_codelist`  | _not used_                              |
 
 ## Pseudocode
 
-For a given patient:
-
-* If the patient has at least one event from `copd` with a date on or before `status_date`:
-
-  * Return **1 (COPD)**
-
-* Otherwise:
-
-  * Return **0 (no COPD)**
+See template
 
 ## Notes on use
 
-- Applying across patients yields:
-  - COPD prevalence at a given date
-  - COPD cohorts (patients with status = 1)
+See template
+
+## Disease notes
+
+See the codelists for further information on the definition of this condition.
 
 ## Assumptions
 
-- COPD is treated as a **persistent condition** (once diagnosed, remains present).
+COPD is treated as a **persistent condition** (once diagnosed, remains present).

@@ -1,14 +1,14 @@
-# Exacerbation of Chronic Lung Disease (ECLD)
+# Lower Respiratory Tract Infection (LRTI)
 
 ## Brief description
 
-Identification of new cases of exacerbation of chronic lung disease (ECLD).
+Identification of new cases of lower respiratory tract infection (LRTI).
 
 ## Overview
 
-This phenotype identifies new cases of exacerbation of chronic lung disease for an individual patient within a specified observation window.
+This phenotype identifies new cases of lower respiratory tract infection for an individual patient within a specified observation window.
 
-ECLD encompasses exacerbations of asthma and exacerbations of COPD.
+LRTI encompasses acute bronchitis and acute pneumonia.
 
 ## Template usage
 
@@ -22,10 +22,10 @@ The template requires these parameters to be specified:
 |----------------------|-----------------------------------------|
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
-| `condition_codelist` | `ecld_combined`                         |
+| `condition_codelist` | `lrti_combined`                         |
 | `interval`           | 28 days                                 |
 
-`ecld_combined` is the union of the codesets RSC-C7215 and RSC-C7199
+`lrti_combined` is the union of the codesets RSC-C7211 and RSC-C7205
 
 ## Pseudocode
 

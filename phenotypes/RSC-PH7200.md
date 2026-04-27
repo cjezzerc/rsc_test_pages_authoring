@@ -1,8 +1,8 @@
-# (aaa) Influenza Like Illness (ILI)
+# Influenza Like Illness (ILI)
 
 ## Brief description
 
-Identification of new cases of Influenza Like Illness (ILI).
+Identification of new cases of influenza like illness (ILI).
 
 ## Overview
 
