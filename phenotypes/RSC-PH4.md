@@ -1,36 +1,54 @@
-# Standard Incidence
-
+# (aaa) Condition status [T]
 
 ## Brief description
 
-Template phenotype for identifying new cases of a disease within a defined time window
-
-## Template note
-
-The following parameters are specific for each disease of interest, and should be specified by the phenotyping algorithm that uses this template:
-
-| Parameter               | Description                     |
-|-------------------------|---------------------------------|
-|  `disease_codelist` |   A list of SNOMED CT codes that identify a diagnosis event for the disease of interest     | 
-|  `interval`         |   The period of time (in days) that must elapse between two diagnosis events for the second event to indicate a new case    |
-
-The following parameters are also required:
-
-| Parameter         | Description                                   |
-|-------------------|-----------------------------------------------|
-| `start_time_period` | The earliest date for which new cases are to be found |
-| `end_time_period`   | The latest date for which new cases are to be found |
+Template phenotype for identifying the status of a patient for a specified condition at a certain date.
 
 ## Overview
 
-The algorithm identifies the cohort of patients that have a diagnosis event indicating a new case of the disease of interest within the period defined by `start_time_period` and `end_time_period`
+This phenotype determines the status of an individual patient at a particular date based on their most recent relevant recorded observation up to that date. 
+
+## Input
+
+| Parameter                | Description                                                                                  |
+|--------------------------|---------------------------------------------------------------------------------------------------|
+| `patient_record`     | A single patient's longitudinal record                                                                |
+| `status_date` | Date at which the status is to be determined                                                                    |
+| `positive_codelist` | SNOMED CT codes indicating presence of the specific condition                                |
+| `negative_codelist` | SNOMED CT codes indicating absence (including recovery from) the specific condition (_optional_)              |
+
+
+## Output
+
+* **Type:** state
+* **Description:**
+  Status for specified condition at the specified date (1 = has the condition, 0 = does not have the condition).
 
 ## Pseudocode
 
-* Patients are included in the cohort if
-        
-    * (i) The patient record has at least one event from `disease_codelist` within the week of observation 
-        
-    * AND
-        
-    * (ii) The patient record has no events from `disease_codelist` in the period of `interval` days before that event
+* A composite codelist `composite_codelist` is defined as the union of `positive_codelist`, and `negative_codelist`.
+
+
+* Let `most_recent_status` be the most recent event in `patient_record` with a code from `composite_codelist` on or before `status_date`.
+
+* If such an event exists:
+
+  * If the code is in `positive_codelist` -> return 1
+  * If the code is in `negative_codelist` -> return 0
+
+* Otherwise:
+
+  * Return 0
+
+## Notes on use
+
+* Applying this phenotype across a collection of patients can produce:
+  * case counts (prevalence)
+  * patient-level variables (patient does or does not have the condition)
+  * cohorts (all patients with the condition)
+  
+  
+## Template note
+
+Section will be removed
+

@@ -1,5 +1,5 @@
 
-# RSC - Ischaemic Heart Disease
+# RSC - Ischaemic Heart Disease (non template version)
 
 ## Brief description
 

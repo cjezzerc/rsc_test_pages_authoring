@@ -1,5 +1,5 @@
 
-# ** Chronic Obstructive Pulmonary Disease (COPD)
+# ** Chronic Obstructive Pulmonary Disease (non template version) (COPD)
 
 ## Brief description
 
