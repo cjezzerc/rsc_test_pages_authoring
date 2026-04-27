@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of acute respiratory infection (ARI).
+Identification of new cases of acute respiratory infection (ARI). (**partial definition**!!)
 
 ## Overview
 

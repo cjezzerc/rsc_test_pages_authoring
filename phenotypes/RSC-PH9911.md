@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of lower respiratory tract infection (LRTI).
+Identification of new cases of lower respiratory tract infection (LRTI). (**partial definition**!!)
 
 ## Overview
 
