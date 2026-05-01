@@ -6,7 +6,7 @@ Identification of dementia status of subject
 
 ## Overview
 
-This phenotype determines whether an individual patient has dementia at a given date based on prior diagnosis events.
+This phenotype determines dementia status at a specified index date in primary care records using curated SNOMED CT positive evidence from dementia diagnosis and dementia medication code sets. For each patient, any qualifying event on or before the index date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Aggregated outputs support prevalence estimation, risk adjustment, and cohort derivation for epidemiological analyses.
 
 ## Template usage
 

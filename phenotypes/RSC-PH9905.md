@@ -7,7 +7,7 @@ Identification of COPD status of subject
 
 ## Overview
 
-This phenotype determines whether an individual patient has COPD at a given date based on prior diagnosis events.
+This phenotype determines COPD status at a specified index date in primary care records using a curated SNOMED CT codelist for positive disease evidence. For each patient, any qualifying event on or before the index date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Aggregated outputs support prevalence estimation, risk adjustment, and cohort derivation for epidemiological analyses.
 
 ## Template usage
 

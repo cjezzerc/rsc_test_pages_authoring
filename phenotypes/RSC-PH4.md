@@ -6,7 +6,7 @@ Template phenotype for identifying the status of subject for a specified conditi
 
 ## Overview
 
-This phenotype determines the status of an individual patient at a particular date based on their most recent relevant recorded observation up to that date. 
+This template phenotype determines condition status at a specified index date from the most recent qualifying condition-related event recorded on or before that date. It uses curated SNOMED CT codelists for positive evidence of disease and, where available, negative evidence such as resolution or explicit absence. Status is assigned from the latest qualifying code (positive = 1, negative = 0), with a default of 0 when no qualifying event exists. Across patient populations, this enables prevalence estimation, binary covariate generation, and construction of condition-defined cohorts.
 
 ## Input
 

@@ -6,9 +6,7 @@ Identification of new cases of lower respiratory tract infection (LRTI). (**part
 
 ## Overview
 
-This phenotype identifies new cases of lower respiratory tract infection for an individual patient within a specified observation window.
-
-LRTI encompasses acute bronchitis and acute pneumonia.
+This phenotype identifies new cases of lower respiratory tract infection (LRTI) in primary care records using a curated composite SNOMED CT definition spanning acute bronchitis and acute pneumonia code groups. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Aggregated outputs support incidence estimation, surveillance, and cohort derivation for epidemiological analyses.
 
 ## Template usage
 

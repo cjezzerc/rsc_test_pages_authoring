@@ -6,7 +6,7 @@ Template phenotype for identifying new cases of a specified condition.
 
 ## Overview
 
-The phenotype identifies new cases by applying a minimum interval between events. 
+This template phenotype identifies incident cases of a specified condition from longitudinal primary care records using a curated SNOMED CT codelist. Within a defined observation window, each qualifying event is evaluated against a user-defined clearance interval; an event is counted as a new case only if no earlier qualifying event occurred in the preceding interval. The phenotype returns a list of incident events per patient, allowing either binary case ascertainment or multiple episodes in longer windows. Applied across populations, it supports incidence estimation, cohort construction, and time-based surveillance analyses.
 
 ## Input
 

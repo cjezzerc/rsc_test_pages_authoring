@@ -7,7 +7,7 @@ Determination of smoking status at a specified date.
 
 ## Overview
 
-This phenotype determines the smoking status of an individual patient at a particular date based on their most recent recorded observation up to that date.
+This phenotype determines smoking status at a specified index date using the most recent smoking-related event recorded on or before that date. It applies curated SNOMED CT codelists representing current smoker, ex-smoker, and non-smoker states, and maps the latest qualifying code to a harmonised status category (SMOKER, EX-SMOKER, NON-SMOKER). Where no qualifying smoking-status record is available, status is UNKNOWN. Applied at scale, this phenotype supports descriptive epidemiology, confounder adjustment, subgroup analyses, and cohort definition by smoking behavior.
 
 ## Input
 

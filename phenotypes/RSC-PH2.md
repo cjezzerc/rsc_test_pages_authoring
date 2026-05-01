@@ -6,14 +6,7 @@ Categorisation of BMI at a specified date using either categorical BMI codes or 
 
 ## Overview
 
-This phenotype determines BMI category for an individual patient at a specified date based on their most recent relevant BMI record within an observation window.
-
-It supports two recording styles:
-
-* Categorical BMI concepts (for example, "BMI 20-24.9")
-* Numeric BMI observations (for example, 24.3)
-
-The output category is harmonised into one of five bands: BMI_LT20, BMI_20_24_9, BMI_25_29_9, BMI_30_39_9, BMI_GE40, or UNKNOWN.
+This phenotype assigns BMI category at a specified index date using the most recent eligible BMI-related record between the start of the observation period and the index date. It integrates two recording modalities in routine care data: categorical BMI status codes and coded numeric BMI observations. The selected record is mapped to harmonised BMI bands (<20, 20 to <25, 25 to <30, 30 to <40, >=40), with UNKNOWN returned when no qualifying record exists. The resulting standardised variable is suited to risk stratification, confounding adjustment, subgroup analyses, and cohort derivation in epidemiological studies.
 
 ## Input
 

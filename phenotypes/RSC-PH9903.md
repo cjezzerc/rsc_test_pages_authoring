@@ -7,7 +7,7 @@ Identification of Diabetes Type 2 status of subject
 
 ## Overview
 
-This phenotype determines whether an individual patient has Diabetes Type 2 at a given date based on prior diagnosis events.
+This phenotype determines Type 2 diabetes status at a specified index date in primary care records using curated SNOMED CT codelists for positive and negative disease-status events. For each patient, the most recent qualifying event on or before the index date defines status: a positive code indicates case status, while a negative code indicates non-case status. If no qualifying event exists, status defaults to non-case. Aggregated outputs support prevalence estimation, risk adjustment, and cohort derivation for epidemiological analyses.
 
 ## Template usage
 
