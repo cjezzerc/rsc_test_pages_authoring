@@ -6,7 +6,7 @@ Identification of dementia status of subject
 
 ## Overview
 
-This phenotype determines dementia status at a specified index date in primary care records using curated SNOMED CT positive evidence from dementia diagnosis and dementia medication code sets. For each patient, any qualifying event on or before the index date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Aggregated outputs support prevalence estimation, risk adjustment, and cohort derivation for epidemiological analyses.
+This phenotype determines dementia status at a specified date in primary care records using a curated SNOMED CT codelist for positive disease evidence, combining dementia diagnosis and dementia medication code sets. For each patient, any qualifying event on or before the specified date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
 
@@ -38,7 +38,7 @@ See template
 
 See template
 
-## Disease notes
+## Condition notes
 
 See the codelists for further information on the definition of this condition.
 

@@ -6,7 +6,7 @@ Identification of new cases of suspected COVID.
 
 ## Overview
 
-This phenotype identifies new cases of suspected COVID in primary care records using a curated SNOMED CT codelist for suspected COVID coding. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. Aggregated outputs support incidence estimation, surveillance, and cohort derivation for epidemiological analyses.
+This phenotype identifies new cases of suspected COVID in primary care records using a curated SNOMED CT codelist. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
 
@@ -32,6 +32,6 @@ See template
 
 See template
 
-## Disease notes
+## Condition notes
 
-See the `disease_codelist` for further information on the definition of this condition.
+See the `condition_codelist` for further information on the definition of this condition.
