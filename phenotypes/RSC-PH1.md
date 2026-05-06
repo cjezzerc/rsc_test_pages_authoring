@@ -42,11 +42,6 @@ This template phenotype identifies incident cases of a specified condition from 
   * In many applications the length of the `observation_window` will be less than `interval`, in which case the list can only ever contain either 0 or 1 cases (for example if the `ovservation-window` is a particular week, and  `interval` is 28 days).
   *  The algorithm is described as returning a list to cope with applications where the `observation_window` is considerably greater than `interval` and the patient could potentially have more than one case within the `observation-window` (for example if the `observation-window` is a particular calendar year, and  `interval` is 28 days))
 
-## markdown authoring issues
-
-* use of events in abstract sense to denote a new case, and in concrete sense of a record in the EPR is muddled and needs fixing
-* lots of repetition (plus template notes can go if have (Template phenotype) in title)
-  
 ## Template note
 
 Section will be removed
