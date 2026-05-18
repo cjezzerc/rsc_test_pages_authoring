@@ -1,4 +1,4 @@
-# Varicella zoster (Chickenpox)
+# Varicella (Chickenpox)
 
 ## Brief description
 

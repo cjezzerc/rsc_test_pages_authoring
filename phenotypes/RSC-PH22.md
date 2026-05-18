@@ -1,8 +1,8 @@
-# Herpes Zoster
+# Herpes Zoster (Shingles)
 
 ## Brief description
 
-Identification of new cases of herpes zoster (shingles).
+Identification of new cases of herpes zoster (shingles)
 
 ## Overview
 
