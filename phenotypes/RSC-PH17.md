@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of lower respiratory tract infection (LRTI). (**partial definition**!!)
+Identification of new cases of lower respiratory tract infection (LRTI). 
 
 ## Overview
 
@@ -28,6 +28,8 @@ The template requires these parameters to be specified:
 | `lrti_combined` is the union of the following codelists: |
 |----------|
 | RSC-C7211 |
+| RSC-C7213 |
+| RSC-C7214 |
 | RSC-C7205 |
 
 ## Pseudocode

@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of acute respiratory infection (ARI). (**partial definition**!!)
+Identification of new cases of acute respiratory infection (ARI). 
 
 ## Overview
 
@@ -28,9 +28,21 @@ The template requires these parameters to be specified:
 | `ari_combined` is the union of the following codelists: |
 |----------|
 | RSC-C7211 |
+| RSC-C7213 |
+| RSC-C7214 |
 | RSC-C7205 |
+| RSC-C7208 |
+| RSC-C7210 |
+| RSC-C7206 |
+| RSC-C7204 |
+| RSC-C7197 |
+| RSC-C7212 |
 | RSC-C7215 |
-| RSC-C7199 |
+| RSC-C7216 |
+| RSC-C7221 |
+| RSC-C7215 |
+| RSC-C7216 |
+| RSC-C7221 |
 
 ## Pseudocode
 

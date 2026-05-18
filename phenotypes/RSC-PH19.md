@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of exacerbation of chronic lung disease (ECLD). (**partial definition**!!)
+Identification of new cases of exacerbation of chronic lung disease (ECLD). 
 
 ## Overview
 
@@ -26,7 +26,8 @@ The template requires these parameters to be specified:
 | `ecld_combined` is the union of the following codelists: |
 |----------|
 | RSC-C7215 |
-| RSC-C7199 |
+| RSC-C7216 |
+| RSC-C7221 |
 
 ## Pseudocode
 
