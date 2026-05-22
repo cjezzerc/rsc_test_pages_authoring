@@ -10,7 +10,7 @@ The repository contains
 
 * a [collection of phenotypes](../phenotypes_index.html) that provide definitions of logic for the use of these codelists in health data research
 
-A liked site provides 
+A linked site (TBA) provides data visualisations of aggregate data obtained from the RSC RGCP database using these phenotypes 
 
 ## Further documentation
 
