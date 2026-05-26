@@ -1,4 +1,6 @@
 
+# Codelists
+
 A codelist in this repository is a list of codes that are needed execute the logic of a particular phenotype, along with its associated metadata.
 
 Other terms used for codelists are value sets, subsets, and code sets.
@@ -29,7 +31,7 @@ The curation of the codelists is also focused on primary care and therefore the 
 
 The RSC codelists are curated by a team of GPs with terminology expertise, using an in-house tooling workflow for initial construction and maintenance across SNOMED CT releases.
 
-The RSC codelist numbering (for example, [RSC-C7199](../codelists/RSC-C7199.html)) is aligned with identifiers in the in-house system. For local RSC users, these identifiers correspond to TADDS variable IDs.
+For local RSC users, the RSC codelist numbering is aligned with identifiers in the in-house system. For example, RSC-C7199 corresponds to TADDS variable 7199.
 
 ## Logical Definition
 
@@ -50,8 +52,8 @@ The expansions can be downloaded using a button in the expansion section, or on 
 
 ## Use in phenotypes
 
-Non-template phenotype definitions reference codelists as algorithm parameters.
+Non-template phenotype definitions reference specific codelists as algorithm parameters.
 
-The same codelist can be reused in more than one phenotype. For example, [RSC-C7221](RSC-C7221.html) appears in both the ECLD phenotype ([RSC-PH19])(RSC-PH19.html) and the ARI phenotype ([RSC-PH20](phenotypes/RSC-PH20.html)) as part of their combined condition codelists.
+The same codelist can be reused in more than one phenotype. For example, RSC-C7221 appears in both the ECLD phenotype (RSC-PH19) and the ARI phenotype (RSC-PH20) as part of their combined condition codelists.
 
-A single phenotype may also use multiple codelists. For example [RSC-PH27](phenotypes/RSC-PH27.html) (RSV vaccination) uses both [RSC-C7529](../codelists/RSC-C7529.html) and [RSC-C7654](../codelists/RSC-C7654.html).
+A single phenotype may also use multiple codelists. For example RSC-PH27 uses both RSC-C7529 and RSC-C7654.
