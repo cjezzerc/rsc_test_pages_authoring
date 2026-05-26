@@ -30,15 +30,15 @@ Many phenotypes for different conditions follow shared logical patterns and diff
 
 To support this, the repository defines "general purpose" template phenotypes. 
 
-For example, [RSC-PH5](../phenotypes/RSC-PH5.html) (Influenza Like Illness, ILI) is defined as 
+For example, RSC-PH5 is defined as 
 
-* use template [RSC-PH1](../phenotypes/RSC-PH1.html) 
-* with codelist [RSC-C7199](../codelists/RSC-CL7199) 
+* use template RSC-PH1
+* with codelist RSC-C7199
 * and with an interval of 28 days.
 
-Whereas [RSC-PH9](../phenotypes/RSC-PH9.html) (Acute Croup)
+Whereas RSC-PH9
 is defined as 
 
-* use template [RSC-PH1](../phenotypes/RSC-PH1.html) 
-* with codelist [RSC-C7204](../codelists/RSC-CL7199) 
+* use template RSC-PH1
+* with codelist RSC-C7204
 * and with an interval of 28 days.

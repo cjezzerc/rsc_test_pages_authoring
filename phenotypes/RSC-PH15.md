@@ -20,7 +20,7 @@ The template requires these parameters to be specified:
 |----------------------|-----------------------------------------|
 | `patient_record`     | _To be provided on execution_           |   
 | `observation_window` | _To be specified on execution_          |
-| `condition_codelist` | RSC-C7199                               |
+| `condition_codelist` | RSC-C7216                               |
 | `interval`           | 28 days                                 |
 
 ## Pseudocode

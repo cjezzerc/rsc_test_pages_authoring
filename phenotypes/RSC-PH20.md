@@ -40,9 +40,8 @@ The template requires these parameters to be specified:
 | RSC-C7215 |
 | RSC-C7216 |
 | RSC-C7221 |
-| RSC-C7215 |
-| RSC-C7216 |
-| RSC-C7221 |
+| RSC-C7199 |
+| RSC-C7223 |
 
 ## Pseudocode
 
