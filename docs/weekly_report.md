@@ -5,7 +5,7 @@ The phenotype collection currently covers many of the [data extraction processes
 
 In the weekly report, the observation window is one week, whereas in the [data visualisations](data visaulisations.html) the observation windows for the corresponding phenotypes in one calendar year.
 
-The following phenotypes from the Weekly Report are currently documented in the phenotype library: 
+The following phenotypes from the Weekly Report are currently documented in the phenotype repository: 
 
 | Phenotype |
 |---|
