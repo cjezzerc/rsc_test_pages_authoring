@@ -8,20 +8,20 @@ For the purpose of the visualisation, the phenotypes can be divided into five gr
 
 ## 1. Acute conditions
 
-For these we apply the phenotype with an observation window of one calendar year. To convert the total number of new cases to cases per 100 000 people, the denominator used is the total number of subjects in the database who **?? are present during any part of that calendar year ??**
+For these we apply the phenotype with an observation window of one calendar year. To convert the total number of new cases to cases per 100 000 people, the denominator used is the total number of subjects who appear in the database during the year.
 
 ## 2. Chronic conditions
 
-For these we apply the phenotype with a status date of the last day of the calendar year shown. To convert these to populations percentages, the denominator used is the total number of subjects in the database who **?? are present on the status date  ??**.
+For these we apply the phenotype with a status date of the last day of the calendar year shown. To convert these to populations percentages, the denominator used is the total number of subjects present in the database.
 
 ## 3. Categorisations
 
-As for chronic conditions, the denominator used is the total number of subjects in the database who **?? are present on the status date  ??**. No age cutoffs are applied.
+As for chronic conditions, the denominator used is the total number of subjects present in the database. No age cutoffs are applied.
 
 ## 4. Drug/vaccine administrations or prescriptions
 
-The data shown is the total number of people in the database that have been recorded as having at least one prescription for, or adminstration of, the drug or vaccine in the calendar year shown. As the definitions of target groups for different drugs and vaccines are complex, no attempt is made to represent these as take up percentages, etc. The raw count data is only shown in table format. 
+The data shown is the total number of people in the database that have been recorded as having at least one prescription for, or adminstration of, the drug or vaccine in the calendar year shown. As the definitions of target groups for different drugs and vaccines are complex, no attempt is made to represent these as take up percentages, etc. The raw count data is shown in table format only. 
 
 ## 5. Measurements
 
-For simple measurements such as pulse, where the phenotype contains no element of categorisation, the value shown is the number of people for whom at least one measurement of the quantity has been recorded in the patient record in the year shown. The raw count data is simply shown in table format.
+For simple measurements such as pulse rate, where the phenotype contains no element of categorisation, the value shown is the number of people for whom at least one measurement of the quantity has been recorded in the patient record in the year shown. The raw count data is shown in table format only.

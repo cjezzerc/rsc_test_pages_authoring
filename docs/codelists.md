@@ -42,7 +42,7 @@ The logical definitions in this repository follow a standard pattern of clauses 
 1. exclude C and all its descendants
 1. exclude concept D (but not its descendants)
 
-Sometimes (in this repositroy and elsewhere) a logical definition consists of only type (2) clauses from the list above, i.e. it is simply a list of individual concepts. In this case the distinction between the logical definition and the expansion blurs.
+Sometimes (in this repository and elsewhere) a logical definition consists of only type (2) clauses from the list above, i.e. it is simply a list of individual concepts. In this case the distinction between the logical definition and the expansion blurs.
 
 ## Expansion
 
