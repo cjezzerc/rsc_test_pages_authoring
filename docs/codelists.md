@@ -9,7 +9,7 @@ The page for each codelist in the repository has three sections
 
 | Section | Contents |
 |--|--|
-| Authored Metadata | This is information such as ... |
+| About this codelist | This is information such as notes on how and why the codelist was constructed [WORK IN PROGRESS], and also details of the SNOMED release that the logical definition was last revised for, and against which the expansion was made |
 | Logical Definition |The logical definition is a definition of the desired membership of a codelist that makes use of the hierarchical nature of a code system like SNOMED CT.|
 | Expansion |The expansion is the explicit list of codes produced by applying the rules in the logical definition against a specific SNOMED CT release. In practical terms, the list of codes can be equated with the "expansion".|
 
