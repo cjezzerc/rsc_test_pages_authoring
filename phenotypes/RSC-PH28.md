@@ -31,3 +31,6 @@ This page is a placeholder and should be updated when the measurement template i
 ## Condition notes
 
 See the `measurement_codelist` for further information on the definition of this measurement.
+## Data Visualisation Flavour
+
+Measurement

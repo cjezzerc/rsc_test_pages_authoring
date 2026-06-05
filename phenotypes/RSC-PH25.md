@@ -35,3 +35,6 @@ See template
 ## Condition notes
 
 See the `condition_codelist` for further information on the definition of this condition.
+## Data Visualisation Flavour
+
+Meds

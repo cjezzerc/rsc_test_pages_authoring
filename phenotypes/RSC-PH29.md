@@ -37,3 +37,7 @@ See template
 See the codelists for further information on the definition of this condition.
 
 
+
+## Data Visualisation Flavour
+
+Chronic

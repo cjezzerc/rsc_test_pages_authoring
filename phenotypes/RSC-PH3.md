@@ -48,3 +48,7 @@ A composite codelist `all_smoker_status_codelist` is defined as the union of `ac
   * distributions of smoking status
   * cohorts (for example, current smokers)
   * patient-level variables (for example, patient is a smoker)
+
+## Data Visualisation Flavour
+
+Categorisation

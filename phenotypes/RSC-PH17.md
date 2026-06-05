@@ -43,3 +43,7 @@ See template
 ## Condition notes
 
 See the codelists for further information on the definition of this condition.
+
+## Data Visualisation Flavour
+
+Acute

@@ -68,3 +68,7 @@ A composite codelist `all_bmi_status_codelist` is defined as the union of:
   * BMI category distributions
   * cohorts (for example, BMI_GE40)
   * patient-level variables (for example, patient is severly obese)
+
+## Data Visualisation Flavour
+
+Categorisation

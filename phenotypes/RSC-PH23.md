@@ -45,3 +45,6 @@ See the codelists for further information on the definition of this condition.
 ## Assumptions
 
 Dementia is treated as a **persistent condition** (once diagnosed, remains present).
+## Data Visualisation Flavour
+
+Chronic
