@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Template phenotype for identifying drug/vaccine prescription or administration events
+Template phenotype for identifying  prescription or administration events for a specifield drug or vaccine 
 
 ## Overview
 

@@ -10,15 +10,15 @@ This phenotype defines pulse rate measurement events in primary care records usi
 
 ## Template usage
 
-Template assignment for this phenotype is to be confirmed.
+This phenotype applies template phenotype T:RSC-PH32.
 
-Required input includes:
+The template requires these parameters to be specified:
 
-| Parameter            | Value                                   |
-|----------------------|-----------------------------------------|
-| `patient_record`     | _To be provided on execution_           |
-| `observation_window` | _To be specified on execution_          |
-| `measurement_codelist` | RSC-C7485                             |
+| Parameter             | Value                                   |
+|-----------------------|-----------------------------------------|
+| `patient_record`      | _To be provided on execution_           |
+| `observation_window`  | _To be specified on execution_          |
+| `measurement_codelist`| RSC-C7485                               |
 
 ## Pseudocode
 
@@ -26,7 +26,7 @@ To be defined.
 
 ## Notes on use
 
-This page is a placeholder and should be updated when the measurement template is finalised.
+See template.
 
 ## Condition notes
 
