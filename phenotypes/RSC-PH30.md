@@ -6,7 +6,7 @@ Identification of ischaemic heart disease status of subject
 
 ## Overview
 
-This phenotype determines ischaemic heart disease status at a specified date in primary care records using a curated SNOMED CT codelist for positive disease evidence. For each patient, any qualifying event on or before the specified date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+This phenotype determines ischaemic heart disease status at a specified date in primary care records using a curated SNOMED CT codelist for positive disease evidence. For each patient, any qualifying event on or before the specified date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. If no qualifying event exists, the patient is classified as non-case. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
 
@@ -35,9 +35,8 @@ See template
 
 See the codelists for further information on the definition of this condition.
 
-## Assumptions
-
 Ischaemic heart disease is treated as a persistent condition (once diagnosed, remains present).
+
 ## Data Visualisation Flavour
 
 Chronic
