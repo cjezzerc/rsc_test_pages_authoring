@@ -6,11 +6,11 @@ Identification of amoxicillin prescribing events.
 
 ## Overview
 
-This phenotype identifies prescribing events for amoxicillin in primary care records using a curated medication codelist. Within the specified observation window, a qualifying event is counted as a new event only if no prior qualifying event occurred in the preceding 0 days (that is, no de-duplication interval is applied). Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
+This phenotype identifies prescribing events for amoxicillin in primary care records using a curated medication codelist. Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
 
-This phenotype applies template phenotype T:RSC-PH1.
+This phenotype applies template phenotype T:RSC-PH31.
 
 See the template for details of the algorithm.
 
@@ -20,9 +20,7 @@ The template requires these parameters to be specified:
 |----------------------|-----------------------------------------|
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
-| `condition_codelist` | RSC-C5129                               |
-| `interval`           | 0 days                                  |
-
+| `drug_codelist`      | RSC-C5129                               |
 
 ## Pseudocode
 
@@ -32,9 +30,9 @@ See template
 
 See template
 
-## Condition notes
+## Product scope
 
-See the `condition_codelist` for further information on the definition of this condition.
+See the `drug_codelist` for further information on the products included.
 
 ## Data Visualisation Flavour
 

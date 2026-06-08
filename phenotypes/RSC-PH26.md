@@ -6,11 +6,11 @@ Identification of statin prescribing events.
 
 ## Overview
 
-This phenotype identifies prescribing events for statins in primary care records using curated medication codelists. Within the specified observation window, a qualifying event is counted as a new event only if no prior qualifying event occurred in the preceding 0 days (that is, no de-duplication interval is applied). Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
+This phenotype identifies prescribing events for statins in primary care records using curated medication codelists. Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
 
-This phenotype applies template phenotype T:RSC-PH1.
+This phenotype applies template phenotype T:RSC-PH31.
 
 See the template for details of the algorithm.
 
@@ -20,8 +20,7 @@ The template requires these parameters to be specified:
 |----------------------|-----------------------------------------|
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
-| `condition_codelist` | `statins_combined`                      |
-| `interval`           | 0 days                                  |
+| `drug_codelist` | `statins_combined`                      |
 
 `statins_combined` is the union of the following codelists:
 
@@ -38,9 +37,9 @@ See template
 
 See template
 
-## Condition notes
+## Product scope
 
-See the codelists for further information on the definition of this condition.
+See the `drug_codelist` for further information on the products included.
 
 ## Data Visualisation Flavour
 

@@ -1,4 +1,3 @@
-
 # Diabetes Type 2
 
 ## Brief Description
