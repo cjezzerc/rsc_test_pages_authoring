@@ -30,14 +30,14 @@ This phenotype assigns BMI category at a specified date using the most recent el
 
 ## Pseudocode
 
-A composite codelist `all_bmi_status_codelist` is defined as the union of:
+* A composite codelist `all_bmi_status_codelist` is defined as the union of:
 
-* `bmi_lt20_codelist`
-* `bmi_20_24.9_codelist`
-* `bmi_25_29.9_codelist`
-* `bmi_30_39.9_codelist`
-* `bmi_ge40_codelist`
-* `bmi_obs_entity_codelist`
+  * `bmi_lt20_codelist`
+  * `bmi_20_24.9_codelist`
+  * `bmi_25_29.9_codelist`
+  * `bmi_30_39.9_codelist`
+  * `bmi_ge40_codelist`
+  * `bmi_obs_entity_codelist`
 
 * Let `most_recent_bmi` be the most recent event in `patient_record` with a code from `all_bmi_status_codelist` and an observation date in the inclusive interval `start_observation_period` to `status_date`.
 
