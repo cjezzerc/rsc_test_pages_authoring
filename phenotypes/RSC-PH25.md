@@ -6,6 +6,7 @@ Identification of amoxicillin prescribing events.
 
 ## Overview
 
+Amoxicillin Prescribed
 This phenotype identifies prescribing events for amoxicillin in primary care records using a curated medication codelist. Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
@@ -22,13 +23,7 @@ The template requires these parameters to be specified:
 | `observation_window` | _To be specified on execution_          |
 | `drug_codelist`      | RSC-C5129                               |
 
-## Pseudocode
 
-See template
-
-## Notes on use
-
-See template
 
 ## Product scope
 

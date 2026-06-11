@@ -12,7 +12,7 @@ As our phenotypes are specified to operate at the level of a single patient, the
 | ---- | ---- |
 | Cohort definition | Apply phenotype across population of subjects and select on basis of phenotpye result |
 | Incidence, Prevalence  | Apply phenotype across population of subjects and derive suitable aggregate statistics |
-| Covariates | Apply phenotype across population of patients and annotate each subject with the derived value |
+| Patient level variables | Apply phenotype across population of patients and annotate each subject with the derived value |
 
 Some definitions of phenotype take these extra aspects as part of the definition, either implicitly or explicitly.
 

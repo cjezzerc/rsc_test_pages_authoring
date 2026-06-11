@@ -6,7 +6,8 @@ Identification of new cases of lower respiratory tract infection (LRTI).
 
 ## Overview
 
-This phenotype identifies new cases of lower respiratory tract infection (LRTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for [LRTI](https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2024.29.35.2300682). Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+Lower Respiratory Tract Infection (LRTI)
+This phenotype identifies new cases of lower respiratory tract infection (LRTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for LRTI. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage
 
@@ -32,13 +33,7 @@ The template requires these parameters to be specified:
 | RSC-C7214 |
 | RSC-C7205 |
 
-## Pseudocode
 
-See template
-
-## Notes on use
-
-See template
 
 ## Condition notes
 

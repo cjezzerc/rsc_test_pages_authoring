@@ -6,7 +6,8 @@ Extraction of pulse rate measurements.
 
 ## Overview
 
-This phenotype defines pulse rate measurement events in primary care records using a curated SNOMED CT codelist for pulse rate observations. It is intended for use in deriving measurement-based variables from coded events and associated numeric values within a specified observation window.
+Pulse Rate
+This phenotype defines pulse rate measurement events in primary care records using a curated SNOMED CT codelist for pulse rate observations. It is intended for use in identifying measurement-based coded events and associated numeric values within a specified observation window.
 
 ## Template usage
 
@@ -19,14 +20,6 @@ The template requires these parameters to be specified:
 | `patient_record`      | _To be provided on execution_           |
 | `observation_window`  | _To be specified on execution_          |
 | `measurement_codelist`| RSC-C7485                               |
-
-## Pseudocode
-
-To be defined.
-
-## Notes on use
-
-See template.
 
 ## Condition notes
 

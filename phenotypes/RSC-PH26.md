@@ -6,6 +6,7 @@ Identification of statin prescribing events.
 
 ## Overview
 
+Statins Prescribed
 This phenotype identifies prescribing events for statins in primary care records using curated medication codelists. Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
@@ -29,13 +30,7 @@ The template requires these parameters to be specified:
 | RSC-C5268 |
 | RSC-C6211 |
 
-## Pseudocode
 
-See template
-
-## Notes on use
-
-See template
 
 ## Product scope
 

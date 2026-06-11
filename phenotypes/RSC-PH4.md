@@ -1,4 +1,4 @@
-# Condition status [T]
+# Binary condition status [T]
 
 ## Brief description
 
@@ -6,7 +6,8 @@ Template phenotype for identifying the status of subject for a specified conditi
 
 ## Overview
 
-This template phenotype determines condition status at a specified date, from the most recent condition-related event recorded on or before that date. It uses curated SNOMED CT codelists for positive evidence of the condition and, where available, negative evidence such as resolution or explicit absence. Status is assigned from the latest qualifying code (positive = 1, negative = 0), with a default of 0 when no qualifying event exists. Applied across populations, it supports prevalence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+Binary condition status [T]
+This template phenotype identifies cases of a chronic condition at a specified date in the primary care record using curated SNOMED CT codelists for positive evidence of the condition and, where available, negative evidence such as resolution or explicit absence. Status is assigned from the latest qualifying code (positive = 1, negative = 0), with a default of 0 when no qualifying event exists. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input
 
@@ -14,13 +15,12 @@ This template phenotype determines condition status at a specified date, from th
 |--------------------------|---------------------------------------------------------------------------------------------------|
 | `patient_record`     | A single patient's longitudinal record                                                                |
 | `status_date` | Date at which the status is to be determined                                                                 |
-| `positive_codelist` | SNOMED CT codes indicating presence of the specific condition                                          |
-| `negative_codelist` | SNOMED CT codes indicating absence (including recovery from) the specific condition (_optional_)       |
+| `positive_codelist` | SNOMED CT codes identifying diagnosis events for the specific condition                                          |
+| `negative_codelist` | SNOMED CT codes indicating absence (including recovery from or remission of) the specific condition (_optional_)       |
 
 
 ## Output
 
-* **Type:** state
 * **Description:**
   Status for specified condition at the specified date (1 = has the condition, 0 = does not have the condition).
 
@@ -42,8 +42,8 @@ This template phenotype determines condition status at a specified date, from th
 
 ## Notes on use
 
-* Applying this phenotype across a collection of patients can produce:
-  * case counts (prevalence)
+* Applying this phenotype to primary care records can produce:
+  * case counts and prevalence
   * patient-level variables (patient does or does not have the condition)
   * cohorts (all patients with the condition)
   

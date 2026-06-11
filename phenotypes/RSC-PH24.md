@@ -3,11 +3,12 @@
 
 ## Brief description
 
-Identification of COPD status of subject
+Identification of chronic obstructive pulmonary disease status of subject
 
 ## Overview
 
-This phenotype determines COPD status at a specified date in primary care records using a curated SNOMED CT codelist for positive disease evidence. For each patient, any qualifying event on or before the specified date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. If no qualifying event exists, the patient is classified as non-case. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+Chronic Obstructive Pulmonary Disease (COPD)
+This phenotype identifies cases of chronic obstructive pulmonary disease (COPD) at a specified date in primary care records using a curated SNOMED CT codelist. For each patient, any qualifying event on or before the specified date classifies the patient as a case. Because no negative-status codelist is used, status is treated as persistent once recorded. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage
 
@@ -24,13 +25,7 @@ The template requires these parameters to be specified:
 | `positive_codelist`  | RSC-C2133                               |
 | `negative_codelist`  | _not used_                              |
 
-## Pseudocode
 
-See template
-
-## Notes on use
-
-See template
 
 ## Condition notes
 

@@ -6,7 +6,8 @@ Template phenotype for identifying new cases of a specified condition.
 
 ## Overview
 
-This template phenotype identifies new cases of a specified condition from longitudinal primary care records using a SNOMED CT codelist. Within the observation window, each qualifying event is evaluated against a clearance interval; an event is counted as a new case only if no earlier qualifying event occurred in the preceding interval. The phenotype returns a list of incident events per patient, allowing identification of either single cases or multiple episodes over longer observation windows. Applied across populations, it supports incidence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+New cases of condition [T]
+This template phenotype identifies new cases of a specified condition from longitudinal primary care records using a SNOMED CT codelist. Within the observation window, each qualifying event is evaluated against a clearance interval; an event is counted as a new case only if no earlier qualifying event occurred in the preceding interval. The phenotype returns a list of incident events per patient, allowing identification of either single cases or multiple episodes over longer observation windows. Applied across populations, it supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input
 
@@ -19,9 +20,8 @@ This template phenotype identifies new cases of a specified condition from longi
 
 ## Output
 
-* **Type:** events
 * **Description:**
-  A list of diagnosis events **WHAT IS RETURNED?DATE?INITIATING EVENT?** for the condition of interest that are considered to indicate new cases within the observation window.
+A list of events for the clinical condition of interest that are considered to indicate new cases within the observation window.
 
 
 ## Pseudocode
@@ -29,18 +29,16 @@ This template phenotype identifies new cases of a specified condition from longi
 * Let `candidate_events` be all events in `patient_record` with codes from `condition_codelist` within `observation_window`.
 * For each event in `candidate_events`:
   * The event is considered to define a new case if:
-    * There are no prior events from `condition_codelist` in the `interval` days before this event.
-* Return the list of all such events.
+    * There are no prior events from `condition_events` in the `interval` days before this event.
+* Return the list of the time-stamps of all such events.
 
 ## Notes on use
 
-* Applying this phenotype across a collection of patients can produce:
-  * case counts (incidence)
+* Applying this phenotype to primary care records can produce:
+  * case counts and incidence
   * patient-level variables (for example, patient has at least one case in list)
   * cohorts (for example, all patients with at least one case)
-* Why the algorithm is described as returning a list:
-  * In many applications the length of the `observation_window` will be less than `interval`, in which case the list can only ever contain either 0 or 1 cases (for example if the `ovservation-window` is a particular week, and  `interval` is 28 days).
-  *  The algorithm is described as returning a list to cope with applications where the `observation_window` is considerably greater than `interval` and the patient could potentially have more than one case within the `observation-window` (for example if the `observation-window` is a particular calendar year, and  `interval` is 28 days))
+
 
 ## Template note
 

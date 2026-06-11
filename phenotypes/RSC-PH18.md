@@ -6,7 +6,8 @@ Identification of new cases of upper respiratory tract infection (LRTI).
 
 ## Overview
 
-This phenotype identifies new cases of upper respiratory tract infection (LRTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for [LRTI](https://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2024.29.35.2300682). Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of patient-level variables for downstream analysis.
+Upper Respiratory Tract Infection (URTI)
+This phenotype identifies new cases of upper respiratory tract infection (URTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for URTI. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage
 
@@ -21,7 +22,7 @@ The template requires these parameters to be specified:
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
 | `condition_codelist` | `urti_combined`                         |
-| `interval`           | 28 days                                 |
+| `interval`           | 14 days                                 |
 
 
 
@@ -34,13 +35,7 @@ The template requires these parameters to be specified:
 | RSC-C7197 |
 | RSC-C7212 |
 
-## Pseudocode
 
-See template
-
-## Notes on use
-
-See template
 
 ## Condition notes
 

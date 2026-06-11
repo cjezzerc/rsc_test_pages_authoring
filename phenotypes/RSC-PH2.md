@@ -2,11 +2,12 @@
 
 ## Brief description
 
-Categorisation of BMI at a specified date using either categorical BMI codes or numeric BMI observations.
+Categorisation of body mass index (BMI) at a specified date using either categorical BMI codes or numeric BMI observations.
 
 ## Overview
 
-This phenotype assigns BMI category at a specified date using the most recent eligible BMI-related record between the start of the observation period and the specified date. It integrates two recording modalities in routine care data: categorical BMI status codes and coded numeric BMI observations. The selected record is mapped to harmonised BMI bands (<20, 20 to <25, 25 to <30, 30 to <40, >=40), with UNKNOWN returned when no qualifying record exists. Applied across populations, the phenotype supports descriptive epidemiology, cohort construction, and derivation of patient-level variables for downstream analysis.
+BMI Categorisation
+This phenotype assigns BMI category at a specified date using the most recent eligible BMI-related record between the start of the observation period and the specified date. It integrates two recording modalities in routine care data: categorical BMI status codes and coded numeric BMI observations. The selected record is mapped to BMI bands (<20, 20 to <25, 25 to <30, 30 to <40, >=40), with UNKNOWN returned when no qualifying record exists. Applied across populations, the phenotype supports descriptive epidemiology, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input
 

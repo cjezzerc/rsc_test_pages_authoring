@@ -7,27 +7,28 @@ Determination of smoking status at a specified date.
 
 ## Overview
 
-This phenotype determines smoking status at a specified date using the most recent smoking-related event recorded on or before that date. It applies curated SNOMED CT codelists representing current smoker, ex-smoker, and non-smoker states, and maps the latest qualifying code to a harmonised status category (SMOKER, EX-SMOKER, NON-SMOKER). Where no qualifying smoking-status record is available, status is UNKNOWN. Applied across populations, the phenotype supports descriptive epidemiology, cohort construction, and derivation of patient-level variables for downstream analysis.
+Smoking Status
+This phenotype determines smoking status at a specified date using the most recent smoking-related event recorded on or before that date. It applies curated SNOMED CT codelists representing current smoker, ex-smoker, and non-smoker states, and maps the latest qualifying code to a harmonised status category (SMOKER, EX-SMOKER, NON-SMOKER). Where no qualifying smoking-status record is available, status is UNKNOWN.
 
 ## Input
 
 | Parameter                 | Description/Value/Identifer                            |
 |---------------------------|----------------------------------------------|
-| `patient_record`     | A single patient's longitudinal record (_provided at execution time_)       
+| `patient_record`     | A single patient's longitudinal record       
 | `status_date`             | Date at which the status is to be determined (_specified at runtime_) |
+|`start_date`| Earliest date from which to search|
 | `active_smoker_codelist`  | RSC-C2065                                    |
 | `ex_smoker_codelist`      | RSC-C2066                                    |
 | `non_smoker_codelist`     | RSC-C2067                                    |
 
 ## Output
 
-* **Type:** attribute
 * **Description:**
   Smoking status at the specified date (SMOKER / EX-SMOKER / NON-SMOKER / UNKNOWN).
 
 ## Pseudocode
 
-A composite codelist `all_smoker_status_codelist` is defined as the union of `active_smoker_codelist`, `ex_smoker_codelist` and `non_smoker_codelist`.
+* A composite codelist `all_smoker_status_codelist` is defined as the union of `active_smoker_codelist`, `ex_smoker_codelist` and `non_smoker_codelist`.
 
 
 * Let `most_recent_status` be the most recent event in `patient_record` with a code from `all_smoker_status_codelist` on or before `status_date`.
@@ -44,7 +45,7 @@ A composite codelist `all_smoker_status_codelist` is defined as the union of `ac
 
 ## Notes on use
 
-* Applying this phenotype across a collection of patients can produce:
+* Applying this phenotype to primary care records can produce:
   * distributions of smoking status
   * cohorts (for example, current smokers)
   * patient-level variables (for example, patient is a smoker)
