@@ -6,7 +6,6 @@ Template phenotype for identifying the status of subject for a specified conditi
 
 ## Overview
 
-Binary condition status [T]
 This template phenotype identifies cases of a chronic condition at a specified date in the primary care record using curated SNOMED CT codelists for positive evidence of the condition and, where available, negative evidence such as resolution or explicit absence. Status is assigned from the latest qualifying code (positive = 1, negative = 0), with a default of 0 when no qualifying event exists. Applied across populations, the phenotype supports prevalence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input

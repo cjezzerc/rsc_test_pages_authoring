@@ -6,7 +6,6 @@ Template phenotype for identifying measurement events for a specified quantity
 
 ## Overview
 
-Measurements [T]
 This template phenotype identifies measurement events for a specified quantity from longitudinal primary care records using a SNOMED CT codelist. The phenotype returns a list of events per patient. Applied across populations, it supports estimation of monitoring rates, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input

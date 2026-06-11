@@ -6,7 +6,6 @@ Identification of respiratory syncytial virus (RSV) vaccination events.
 
 ## Overview
 
-Respiratory Syncytial Virus (RSV) Vaccination
 This phenotype identifies RSV vaccination-related events in primary care records using curated codelists for RSV vaccination and RSV vaccine products. Applied across populations, the phenotype supports vaccine uptake surveillance, cohort construction, and derivation of a patient-level variable for downstream analysis. Events that occur on the same day are treated as a single event.
 
 ## Template usage

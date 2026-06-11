@@ -6,7 +6,6 @@ Template phenotype for identifying  prescription or administration events for a 
 
 ## Overview
 
-Prescription or administration of drug/vaccine [T]
 This template phenotype identifies prescription or administration events for a specified drug or vaccine from longitudinal primary care records using a SNOMED CT codelist. The administration of a vaccine may be identified with either a code recording the administering of the vaccine or an entry in the prescription table for the vaccine itself. The phenotype returns a list of events per patient. Applied across populations, it supports estimation of prescribing rates or vaccine coverage, cohort construction, and derivation of a patient-level variable for downstream analysis.
 It is possible to filter the results so that the recording of two (or more) events on one day only counts as one prescription event. With this filtering, the recording of, for instance, a vaccine prescription and its administration on the same day only counts as one vaccination event. Filtering is achieved by setting same_day_filter=True
 

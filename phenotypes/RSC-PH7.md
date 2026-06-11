@@ -6,7 +6,6 @@ Identification of new cases of acute otitis media.
 
 ## Overview
 
-Acute Otitis Media
 This phenotype identifies new cases of acute otitis media in primary care records using a curated SNOMED CT codelist. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 14 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage

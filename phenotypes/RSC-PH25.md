@@ -6,7 +6,6 @@ Identification of amoxicillin prescribing events.
 
 ## Overview
 
-Amoxicillin Prescribed
 This phenotype identifies prescribing events for amoxicillin in primary care records using a curated medication codelist. Applied across populations, the phenotype supports prescribing surveillance, cohort construction, and derivation of patient-level variables for downstream analysis.
 
 ## Template usage
