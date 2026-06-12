@@ -10,25 +10,26 @@ This phenotype assigns BMI category at a specified date using the most recent el
 
 ## Input
 
-| Parameter                 | Description/Value/Identifier                            |
-|---------------------------|----------------------------------------------|
-| `patient_record`          | A single patient's longitudinal record (_provided at execution time_) |
-| `status_date`             | Date at which BMI category is to be determined (_specified at runtime_) |
-| `start_observation_period`| Earliest date at which observations are still to be considered relevant |
-| `bmi_lt20_codelist`       | RSC-C???? |
-| `bmi_20_24.9_codelist`    | RSC-C1502 |
-| `bmi_25_29.9_codelist`    | RSC-C1504 |
-| `bmi_30_39.9_codelist`    | RSC-C1503 |
-| `bmi_ge40_codelist`       | RSC-C1505 |
-| `bmi_obs_entity_codelist` | RSC-C5022 |
+| Parameter                 | Description                                                             | Value                          |
+|---------------------------|-------------------------------------------------------------------------|--------------------------------|
+| `patient_record`          | A single patient's longitudinal record                                  | _To be provided on execution_  |
+| `status_date`             | Date at which BMI category is to be determined                          | _To be specified on execution_ |
+| `start_observation_period`| Earliest date at which observations are still to be considered relevant | _To be specified on execution_ |
+| `bmi_lt20_codelist`       | SNOMED CT codes indicating that the BMI is less than 20                 | RSC-C????                      |
+| `bmi_20_24.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 20-24.9         | RSC-C1502                      |
+| `bmi_25_29.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 25-29.9         | RSC-C1504                      |
+| `bmi_30_39.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 30-39.9         | RSC-C1503                      |
+| `bmi_ge40_codelist`       | SNOMED CT codes indicating that the BMI is greater than 40              | RSC-C1505                      |
+| `bmi_obs_entity_codelist` | SNOMED CT codes indicating that a value has been recorded for BMI       | RSC-C5022                      |
 
 ## Output
 
-* **Type:** attribute
 * **Description:**
   BMI category at the specified date (BMI_LT20 / BMI_20_24_9 / BMI_25_29_9 / BMI_30_39_9 / BMI_GE40 / UNKNOWN).
 
 ## Pseudocode
+
+* It is assumed that all BMI values are recorded (or categorised) rounded to one decimal place
 
 * A composite codelist `all_bmi_status_codelist` is defined as the union of:
 

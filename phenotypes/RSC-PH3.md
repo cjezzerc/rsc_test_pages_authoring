@@ -11,14 +11,14 @@ This phenotype determines smoking status at a specified date using the most rece
 
 ## Input
 
-| Parameter                 | Description/Value/Identifer                            |
-|---------------------------|----------------------------------------------|
-| `patient_record`     | A single patient's longitudinal record       
-| `status_date`             | Date at which the status is to be determined (_specified at runtime_) |
-|`start_date`| Earliest date from which to search|
-| `active_smoker_codelist`  | RSC-C2065                                    |
-| `ex_smoker_codelist`      | RSC-C2066                                    |
-| `non_smoker_codelist`     | RSC-C2067                                    |
+| Parameter                 | Description                                  |  Value                          |
+|---------------------------|----------------------------------------------|---------------------------------|
+| `patient_record`          | A single patient's longitudinal record       | _To be provided on execution_   |
+| `status_date`             | Date at which the status is to be determined | _To be specified on execution_  |
+| `start_date`              | Earliest date from which to search           | _To be specified on execution_  |
+| `active_smoker_codelist`  | SNOMED CT codes identifying active smokers   | RSC-C2065                       |
+| `ex_smoker_codelist`      | SNOMED CT codes identifying ex-smokers       | RSC-C2066                       | 
+| `non_smoker_codelist`     | SNOMED CT codes identifying ex-smokers       | RSC-C2067                       |
 
 ## Output
 
@@ -29,8 +29,9 @@ This phenotype determines smoking status at a specified date using the most rece
 
 * A composite codelist `all_smoker_status_codelist` is defined as the union of `active_smoker_codelist`, `ex_smoker_codelist` and `non_smoker_codelist`.
 
+* Let `observation_window` be the period from `start_date` to `status_date` (inclusive)
 
-* Let `most_recent_status` be the most recent event in `patient_record` with a code from `all_smoker_status_codelist` on or before `status_date`.
+* Let `most_recent_event` be the most recent event in `patient_record` within the `observation_window` with a code from `all_smoker_status_codelist`.
 
 * If such an event exists:
 
