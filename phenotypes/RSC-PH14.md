@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of exacerbation of asthma.
+Identification of new cases of asthma exacerbation.
 
 ## Overview
 

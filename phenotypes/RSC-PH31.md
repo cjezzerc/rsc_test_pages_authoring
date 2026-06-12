@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Template phenotype for identifying  prescription or administration events for a specifield drug or vaccine 
+Template phenotype for identifying  prescription or administration events for a specified drug or vaccine 
 
 ## Overview
 
@@ -26,9 +26,15 @@ It is possible to filter the results so that the recording of two (or more) even
 ## Pseudocode
 
 * Let `candidate_events` be all events in `patient_record` with codes from `drug_issue_codelist` within `observation_window`.
+
 * For each event in `candidate_events`:
+
   * The event is considered to define a separate event if:
-    * same_day_filter is false, or there are no prior events from `drug_issue_codelist` on the same day as the event.
+
+    * same_day_filter is false, 
+    * or 
+    * there are no prior events from `drug_issue_codelist` on the same day as the event.
+
 * Return the list of all such events.
 
 ## Notes on use

@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of Exacerbation of COPD.
+Identification of new cases of COPD exacerbation.
 
 ## Overview
 

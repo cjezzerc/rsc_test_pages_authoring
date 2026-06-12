@@ -1,8 +1,8 @@
-# Upper Respiratory Tract Infection (LRTI)
+# Upper Respiratory Tract Infection (URTI)
 
 ## Brief description
 
-Identification of new cases of upper respiratory tract infection (LRTI).
+Identification of new cases of upper respiratory tract infection (URTI).
 
 ## Overview
 

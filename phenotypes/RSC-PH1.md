@@ -26,10 +26,14 @@ A list of events for the clinical condition of interest that are considered to i
 ## Pseudocode
 
 * Let `candidate_events` be all events in `patient_record` with codes from `condition_codelist` within `observation_window`.
+
 * For each event in `candidate_events`:
+
   * The event is considered to define a new case if:
+
     * There are no prior events from `condition_events` in the `interval` days before this event.
-* Return the list of the time-stamps of all such events.
+
+* Return the list of the time-stamps of all events that define a new case.
 
 ## Notes on use
 
