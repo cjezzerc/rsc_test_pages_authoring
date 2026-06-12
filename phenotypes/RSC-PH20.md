@@ -6,7 +6,7 @@ Identification of new cases of acute respiratory infection (ARI).
 
 ## Overview
 
-This phenotype identifies new cases of acute respiratory infection (ARI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for ARI. Within the specified observation window, a qualifying event is counted as a new case only if no prior qualifying event occurred in the preceding 28 days. This interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of ARI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of patient-level variable for downstream analysis.
+This phenotype identifies new cases of acute respiratory infection (ARI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for ARI. An interval rule (with a default value of 28 days) reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of ARI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of patient-level variable for downstream analysis.
 
 ## Template usage
 
@@ -21,7 +21,7 @@ The template requires these parameters to be specified:
 | `patient_record`     | _To be provided on execution_           |
 | `observation_window` | _To be specified on execution_          |
 | `condition_codelist` | `ari_combined`                          |
-| `interval`           | 28 days                                 |
+| `interval`           | _Specifiable on execution_ (default=28 days) |
 
 
 
