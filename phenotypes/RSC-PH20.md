@@ -18,10 +18,10 @@ The template requires these parameters to be specified:
 
 | Parameter            | Value                                   |
 |----------------------|-----------------------------------------|
-| `patient_record`     | _To be provided on execution_           |
+| `patient_record`     | _To be specified on execution_           |
 | `observation_window` | _To be specified on execution_          |
 | `condition_codelist` | `ari_combined`                          |
-| `interval`           | _Specifiable on execution_ (default=28 days) |
+| `interval`           | _To be specified on execution_ (default=28 days) |
 
 
 

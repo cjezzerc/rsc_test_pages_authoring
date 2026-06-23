@@ -13,7 +13,7 @@ This phenotype determines smoking status at a specified date using the most rece
 
 | Parameter                 | Description                                  |  Value                          |
 |---------------------------|----------------------------------------------|---------------------------------|
-| `patient_record`          | A single patient's longitudinal record       | _To be provided on execution_   |
+| `patient_record`          | A single patient's longitudinal record       | _To be specified on execution_   |
 | `status_date`             | Date at which the status is to be determined | _To be specified on execution_  |
 | `start_date`              | Earliest date from which to search           | _To be specified on execution_  |
 | `active_smoker_codelist`  | SNOMED CT codes identifying active smokers   | RSC-C2065                       |

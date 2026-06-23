@@ -19,7 +19,7 @@ The template requires these parameters to be specified:
 
 | Parameter            | Value                                   |
 |----------------------|-----------------------------------------|
-| `patient_record`     | _To be provided on execution_           |   
+| `patient_record`     | _To be specified on execution_           |   
 | `status_date`        | _To be specified on execution_          |
 | `positive_codelist`  | RSC-C2133                               |
 | `negative_codelist`  | _not used_                              |

@@ -18,10 +18,10 @@ The template requires these parameters to be specified:
 
 | Parameter            | Value                                   |
 |----------------------|-----------------------------------------|
-| `patient_record`     | _To be provided on execution_           |
+| `patient_record`     | _To be specified on execution_           |
 | `observation_window` | _To be specified on execution_          |
 | `condition_codelist` | RSC-C1060                               |
-| `interval`           | _Specifiable on execution_ (default=365 days) |
+| `interval`           | _To be specified on execution_ (default=365 days) |
 
 
 
