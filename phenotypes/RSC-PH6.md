@@ -2,7 +2,7 @@
 
 ## Brief description
 
-Identification of new cases of acute tonsillitis or pharyngitis.
+Identification of new cases of acute tonsillitis/pharyngitis.
 
 ## Overview
 
