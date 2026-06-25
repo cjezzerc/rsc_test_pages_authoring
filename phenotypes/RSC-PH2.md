@@ -67,7 +67,7 @@ This phenotype assigns BMI category at a specified date using the most recent el
 
 * Applying this phenotype across a collection of patients can produce:
   * BMI category distributions
-  * cohorts (for example, BMI_GE40)
+  * cohorts (for example, all patients that are in the BMI_SEVERELY_OBESE category)
   * patient-level variables (for example, patient is severly obese)
 
 * There is a small unavoidable inconsistency, in that the lower limit on BMI_NORMAL is 20 when using categorical codes, and 18.5 when using numerical values. This is due to the available BMI categorical codes in SNOMED not precisely aligning with the current NICE guidelines. The effect should be small as in practice the majority of recorded values are numerical, and categorical codes tend to be used in rarer circumstances where an estimate is made rather than a direct measurement. 
