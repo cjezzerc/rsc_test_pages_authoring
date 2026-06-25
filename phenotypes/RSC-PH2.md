@@ -6,7 +6,7 @@ Categorisation of body mass index (BMI) at a specified date using either categor
 
 ## Overview
 
-This phenotype assigns BMI category at a specified date using the most recent eligible BMI-related record between the start of the observation period and the specified date. It integrates two recording modalities in routine care data: categorical BMI status codes and coded numeric BMI observations. The selected record is mapped to BMI bands (<20, 20 to <25, 25 to <30, 30 to <40, >=40), with UNKNOWN returned when no qualifying record exists. Applied across populations, the phenotype supports descriptive epidemiology, cohort construction, and derivation of a patient-level variable for downstream analysis.
+This phenotype assigns BMI category at a specified date using the most recent eligible BMI-related record between the start of the observation period and the specified date. It integrates two recording modalities in routine care data: categorical BMI status codes and coded numeric BMI observations. The selected record is mapped to BMI bands of BMI_UNDERWEIGHT, BMI_NORMAL, BMI_OVERWEIGHT, BMI_OBESE and BMI_SEVERELY_OBESE , with UNKNOWN returned when no qualifying record exists. Applied across populations, the phenotype supports descriptive epidemiology, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Input
 
@@ -49,19 +49,19 @@ This phenotype assigns BMI category at a specified date using the most recent el
 * Otherwise, if the event code is in `bmi_obs_entity_codelist`:
 
   * Let `bmi_value` be the numeric value associated with the event
-  * If `bmi_value < 20` -> return **BMI_LT20**
-  * If `20 <= bmi_value < 25` -> return **BMI_20_24_9**
-  * If `25 <= bmi_value < 30` -> return **BMI_25_29_9**
-  * If `30 <= bmi_value < 40` -> return **BMI_30_39_9**
-  * If `bmi_value >= 40` -> return **BMI_GE40**
+  * If `bmi_value < 18.5` -> return **BMI_UNDERWEIGHT**
+  * If `18.5 <= bmi_value < 25` -> return **BMI_NORMAL**
+  * If `25 <= bmi_value < 30` -> return **BMI_OVERWEIGHT**
+  * If `30 <= bmi_value < 40` -> return **BMI_OBESE**
+  * If `bmi_value >= 40` -> return **BMI_SEVERELY_OBESE**
 
 * Otherwise,
 
-  * If the event code is in `bmi_lt20_codelist` -> return **BMI_LT20**
-  * If the event code is in `bmi_20_24.9_codelist` -> return **BMI_20_24_9**
-  * If the event code is in `bmi_25_29.9_codelist` -> return **BMI_25_29_9**
-  * If the event code is in `bmi_30_39.9_codelist` -> return **BMI_30_39_9**
-  * If the event code is in `bmi_ge40_codelist` -> return **BMI_GE40**
+  * If the event code is in `bmi_lt20_codelist` -> return **BMI_UNDERWEIGHT**
+  * If the event code is in `bmi_20_24.9_codelist` -> return **BMI_NORMAL**
+  * If the event code is in `bmi_25_29.9_codelist` -> return **BMI_OVERWEIGHT**
+  * If the event code is in `bmi_30_39.9_codelist` -> return **BMI_OBESE**
+  * If the event code is in `bmi_ge40_codelist` -> return **BMI_SEVERELY_OBESE**
 
 ## Notes on use
 
@@ -69,6 +69,8 @@ This phenotype assigns BMI category at a specified date using the most recent el
   * BMI category distributions
   * cohorts (for example, BMI_GE40)
   * patient-level variables (for example, patient is severly obese)
+
+* There is a small unavoidable inconsistency, in that the lower limit on BMI_NORMAL is 20 when using categorical codes, and 18.5 when using numerical values. This is due to the available BMI categorical codes in SNOMED not precisely aligning with the current NICE guidelines. The effect should be small as in practice the majority of recorded values are numerical, and categorical codes tend to be used in rarer circumstances where an estimate is made rather than a direct measurement. 
 
 ## Data Visualisation Flavour
 
