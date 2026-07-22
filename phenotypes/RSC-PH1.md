@@ -36,7 +36,7 @@ A list of time-stamped events for the clinical condition of interest that are co
     * and
     * The event is within `observation_window`
 
-* Return the list of the time-stamps of all events that define a new case.
+* Return the list of the time-stamped events of all events that define a new case.
 
 ## Notes on use
 
