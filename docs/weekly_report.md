@@ -20,7 +20,6 @@ The following phenotypes from the Weekly Report are currently documented in the 
 | RSC-PH13 |
 | RSC-PH14 |
 | RSC-PH15 |
-| RSC-PH16 |
 | RSC-PH17 |
 | RSC-PH18 |
 | RSC-PH19 |
