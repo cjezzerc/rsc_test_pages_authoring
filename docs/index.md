@@ -10,7 +10,7 @@ The repository contains
 
 * a [collection of phenotypes](../phenotypes_index.html) that provide definitions of logic for the use of these codelists in health data research
 
-A linked site (TBA) provides data visualisations of aggregate data obtained from the RSC RGCP database using these phenotypes 
+<!-- A linked site (TBA) provides data visualisations of aggregate data obtained from the RSC RGCP database using these phenotypes -->
 
 ## Further documentation
 
@@ -18,5 +18,5 @@ A linked site (TBA) provides data visualisations of aggregate data obtained from
 | --- | --- |
 | [Codelists](codelists.html) | How the codelists are structured, curated, and intended to be used. |
 | [Phenotypes](phenotypes.html) | How phenotype definitions are built and how they combine logic with the underlying codelists. |
-| [Weekly report](weekly_report.html) | The data extraction processes used to create the Weekly RSC Communicable and Respiratory Disease Report for England. |
-| [Data visualisations](data_visualisations.html) | How the data for the data visualisations are created
+| [Weekly report](weekly_report.html) | How the phenotypes relate to some of the data extraction processes used to create the Weekly RSC Communicable and Respiratory Disease Report for England. |
+<!-- | [Data visualisations](data_visualisations.html) | How the data for the data visualisations are created   -->
