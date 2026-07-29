@@ -12,10 +12,10 @@ This phenotype assigns BMI category at a specified date using the most recent el
 
 | Parameter                 | Description                                                             | Value                          |
 |---------------------------|-------------------------------------------------------------------------|--------------------------------|
-| `patient_record`          | A single patient's longitudinal record                                  | _To be specified on execution_  |
+| `patient_record`          | A single patient's longitudinal record                                  | _To be specified on execution_ |
 | `status_date`             | Date at which BMI category is to be determined                          | _To be specified on execution_ |
 | `start_observation_period`| Earliest date at which observations are still to be considered relevant | _To be specified on execution_ |
-| `bmi_lt20_codelist`       | SNOMED CT codes indicating that the BMI is less than 20                 | RSC-C????                      |
+| `bmi_lt20_codelist`       | SNOMED CT codes indicating that the BMI is less than 20                 | RSC-C7931                      |
 | `bmi_20_24.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 20-24.9         | RSC-C1502                      |
 | `bmi_25_29.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 25-29.9         | RSC-C1504                      |
 | `bmi_30_39.9_codelist`    | SNOMED CT codes indicating that the BMI is in the range 30-39.9         | RSC-C1503                      |
