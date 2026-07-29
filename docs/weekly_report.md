@@ -3,7 +3,8 @@
 
 The phenotype collection currently covers many of the data extraction processes used in creating the [Weekly RSC Communicable and Respiratory Disease Report for England](https://www.rcgp.org.uk/representing-you/research-at-rcgp/research-surveillance-centre/public-health-data) ("The Weekly Report") which is part of our work funded by the [UK Health Security Agency](https://www.gov.uk/government/organisations/uk-health-security-agency). 
 
-In the weekly report, the observation window is one week, whereas in the [data visualisations](data visaulisations.html) the observation windows for the corresponding phenotypes in one calendar year.
+In the weekly report, the observation window is one week
+<!--, whereas in the [data visualisations](data visaulisations.html) the observation windows for the corresponding phenotypes in one calendar year. -->
 
 The following phenotypes from the Weekly Report are currently documented in the phenotype repository: 
 
