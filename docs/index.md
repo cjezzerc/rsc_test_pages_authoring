@@ -20,3 +20,13 @@ The repository contains
 | [Phenotypes](phenotypes.html) | How phenotype definitions are built and how they combine logic with the underlying codelists. |
 | [Weekly report](weekly_report.html) | How the phenotypes relate to some of the data extraction processes used to create the Weekly RSC Communicable and Respiratory Disease Report for England. |
 <!-- | [Data visualisations](data_visualisations.html) | How the data for the data visualisations are created   -->
+
+## The small print
+
+SNOMED Clinical Terms® content © International Health Terminology Standards Development Organisation.
+
+This work may be copied freely for non-commercial research and study.
+
+If a codelist or phenotype from this site is used for research we ask you to cite the [RSC RCGP Phenotype and Codelist Repository](), and advise that for long term access relevant phenotype descriptiosn or codelists should be reproduced as supplementary information in any publications.
+
+[Copyright](https://www.ox.ac.uk/legal)
