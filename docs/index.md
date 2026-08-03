@@ -27,6 +27,6 @@ SNOMED Clinical Terms® content © International Health Terminology Standards De
 
 This work may be copied freely for non-commercial research and study.
 
-If a codelist or phenotype from this site is used for research we ask you to cite the [RSC RCGP Phenotype and Codelist Repository](), and advise that for long term access relevant phenotype descriptiosn or codelists should be reproduced as supplementary information in any publications.
+If a codelist or phenotype from this site is used for research we ask you to cite the [RSC RCGP Phenotype and Codelist Repository](), and advise that for long term access relevant phenotype descriptions or codelists should be reproduced as supplementary information in any publications.
 
 [Copyright](https://www.ox.ac.uk/legal)
