@@ -15,7 +15,7 @@ The page for each codelist in the repository has three sections
 
 "logical definition" and "expansion" are standard terms from HL7/FHIR terminology practice.
 
-The expansion is also sometimes known as the extensional definition. or the flat list.
+The expansion is also sometimes known as the extensional definition, or the flat list.
 
 The logical definition is also sometimes known as the intensional definition, or more loosely the "ECL definition".
 
