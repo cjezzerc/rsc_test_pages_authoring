@@ -23,9 +23,9 @@ This template phenotype identifies measurement events for a specified quantity f
 
 ## Pseudocode
 
-* Let `candidate_events` be all events in `patient_record` with codes from `measurement_codelist` within `observation_window`.
+* Let `candidate_events` be all events in `patient_record` with codes from `measurement_codelist` within `observation_window` that have an associated recorded value.
 
-* Return the list of all events including the associated recorded value.
+* Return the list of all `candidate_events` including the associated recorded value.
 
 ## Notes on use
 
