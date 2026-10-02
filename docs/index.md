@@ -8,8 +8,8 @@ The repository contains
 
 | Resource Section | Description |
 | --- | --- |
-| [Codelists](../codelists_index.html) | a selection of curated lists of SNOMED CT codes designed for the interrogation of Primary Care health records |
-| [Phenotypes](../phenotypes_index.html) | a collection of phenotypes that provide example definitions of logic for the use of these codelists in health data research |
+| [Codelist Index](../codelists_index.html) | a selection of curated lists of SNOMED CT codes designed for the interrogation of Primary Care health records |
+| [Phenotype Index](../phenotypes_index.html) | a collection of phenotypes that provide example definitions of logic for the use of these codelists in health data research |
 
 ## Further documentation
 
