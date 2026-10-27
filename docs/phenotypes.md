@@ -14,7 +14,7 @@ As our phenotypes are specified to operate at the level of a single patient, the
 | Incidence, Prevalence  | Apply phenotype across population of subjects and derive suitable aggregate statistics |
 | Patient level variables | Apply phenotype across population of patients and annotate each subject with the derived value |
 
-Some definitions of phenotype take these extra aspects as part of the definition, either implicitly or explicitly.
+Some definitions of phenotype used elsewhere take these extra aspects as part of the definition, either implicitly or explicitly.
 
 ## Pseudocode
 
@@ -23,6 +23,8 @@ Definitions are written in semi-formal pseudocode: they are intended to be preci
 When phenotype definitions refer to events, patient data are assumed to be represented as one or more event tables. Each event is assumed to carry a single SNOMED CT code, interpreted as positive evidence for the concept represented by that code.
 
 For some concepts, events are also assumed to include one associated value (and, where relevant, a unit of measurement). For example, this applies to 60621009 |Body mass index|.
+
+As the pseudocode is data model agnostic, there are some aspects of the execution of actual RSC analyses that are not represented here. Please contact us if you have any specific queries about how information presented here relates to published RSC outputs.
 
 ## Template phenotypes
 

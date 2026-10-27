@@ -6,7 +6,7 @@ Identification of new cases of upper respiratory tract infection (URTI).
 
 ## Overview
 
-This phenotype identifies new cases of upper respiratory tract infection (URTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for URTI. An interval rule (with a default value of 28 days) reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
+This phenotype identifies new cases of upper respiratory tract infection (URTI) in primary care records using a combination of curated SNOMED CT codelists for defining conditions for URTI. An interval rule reduces double-counting from follow-up consultations during the same illness period. This implementation is a partial operational definition of LRTI. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage
 

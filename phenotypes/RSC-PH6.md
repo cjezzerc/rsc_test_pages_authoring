@@ -6,7 +6,7 @@ Identification of new cases of acute tonsillitis/pharyngitis.
 
 ## Overview
 
-This phenotype identifies new cases of acute tonsillitis/pharyngitis in primary care records using a curated SNOMED CT codelist. An interval rule (with a default value of 14 days) reduces double-counting from follow-up consultations during the same illness period. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
+This phenotype identifies new cases of acute tonsillitis/pharyngitis in primary care records using a curated SNOMED CT codelist. An interval rule reduces double-counting from follow-up consultations during the same illness period. Applied across populations, the phenotype supports incidence estimation, cohort construction, and derivation of a patient-level variable for downstream analysis.
 
 ## Template usage
 
