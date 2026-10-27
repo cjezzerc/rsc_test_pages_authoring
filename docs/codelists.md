@@ -52,7 +52,19 @@ The expansions can be downloaded using a button in the expansion section, or on 
 
 We advise that for long term access relevant codelists should be reproduced as supplementary information in any publications.
 
-## Use in phenotypes
+## EMIS namespace codes
+
+The codelists presented here contain some codes from the EMIS namespace. For the majority of records in the RSC dataset, EMIS namespace codes are mapped to UK release SNOMED codes using tables provided by EMIS as part of the data loading process. There remain a small number of codes that are not mapped by such a process and these remain as codes of the form (1-8 digits)-100006-(3 digits), 
+
+e.g. 2010031000006100 | Acute infective exacerbation of asthma |
+
+Expansions of logical definitions are supplemented using information provided by EMIS, that links many of the EMIS namespace codes into the SNOMED UK release hierarchy. For certain EMIS namespace concepts it is necessary to add explicit clauses to include single concepts in the logical definition.
+
+## Inactive concepts
+
+Codelists are supplemented with data from the NHS England History Substitution Table.
+
+## Use of codelists in phenotypes
 
 Non-template phenotype definitions reference specific codelists as algorithm parameters.
 
