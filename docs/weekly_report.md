@@ -27,6 +27,5 @@ The following phenotypes correspond to phenotypes reported in the the Weekly Rep
 | RSC-PH20 |
 | RSC-PH21 |
 | RSC-PH22 |
-| RSC-PH19 |
 
 In the Weekly Report, the observation window is one week.

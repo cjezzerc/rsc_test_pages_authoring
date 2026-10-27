@@ -44,7 +44,7 @@ The logical definitions in this repository follow a standard pattern of clauses 
 
 Sometimes (in this repository and elsewhere) a logical definition consists of only type (2) clauses from the list above, i.e. it is simply a list of individual concepts. In this case the distinction between the logical definition and the expansion blurs.
 
-## Expansion
+## <a id="Expansion"></a>Expansion
 
 The SNOMED CT release against which the expansion is made is stated.
 
@@ -52,7 +52,7 @@ The expansions can be downloaded using a button in the expansion section, or on 
 
 We advise that for long term access relevant codelists should be reproduced as supplementary information in any publications.
 
-## EMIS namespace codes
+### EMIS namespace codes
 
 The codelists presented here contain some codes from the EMIS namespace. For the majority of records in the RSC dataset, EMIS namespace codes are mapped to UK release SNOMED codes using tables provided by EMIS as part of the data loading process. There remain a small number of codes that are not mapped by such a process and these remain as codes of the form (1-8 digits)-100006-(3 digits), 
 
@@ -60,7 +60,7 @@ e.g. 2010031000006100 | Acute infective exacerbation of asthma |
 
 Expansions of logical definitions are supplemented using information provided by EMIS, that links many of the EMIS namespace codes into the SNOMED UK release hierarchy. For certain EMIS namespace concepts it is necessary to add explicit clauses to include single concepts in the logical definition.
 
-## Inactive concepts
+### Inactive concepts
 
 Codelists are supplemented with data from the NHS England History Substitution Table.
 
