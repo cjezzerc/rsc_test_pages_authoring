@@ -54,7 +54,7 @@ We advise that for long term access relevant codelists should be reproduced as s
 
 ### EMIS namespace codes
 
-The codelists presented here contain some codes from the EMIS namespace. For the majority of records in the RSC dataset, EMIS namespace codes are mapped to UK release SNOMED codes using tables provided by EMIS as part of the data loading process. There remain a small number of codes that are not mapped by such a process and these remain as codes of the form (1-8 digits)-100006-(3 digits), 
+The codelists presented here contain some codes from the EMIS namespace. For the majority of records in the RSC dataset, EMIS namespace codes are mapped to UK release SNOMED codes using tables provided by EMIS as part of the data provisioning process. There remain a small number of codes that are not mapped by such a process and these remain as codes of the form (1-8 digits)-100006-(3 digits), 
 
 e.g. 2010031000006100 | Acute infective exacerbation of asthma |
 
