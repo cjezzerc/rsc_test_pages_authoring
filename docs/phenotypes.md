@@ -1,5 +1,7 @@
 # Phenotypes
 
+Please feel free to [Contact us](mailto:rsc_phenotypes@phc.ox.ac.uk) if you any questions about a particular phenotype or about anything else in this repository. 
+
 ## The scope of a phenotype in this repository
 
 A phenotype in this repository is a computable, implementation-independent definition of how to derive a clinically meaningful event, state, or attribute from **a single patient’s longitudinal primary care record**.

@@ -1,6 +1,10 @@
 
 # Codelists
 
+Please feel free to [Contact us](mailto:rsc_phenotypes@phc.ox.ac.uk) if you any questions about a particular codelist or about anything else in this repository. 
+
+------
+
 A codelist in this repository is a list of codes that are needed to execute the logic of a particular phenotype, along with associated codelist metadata.
 
 Other terms used for codelists are value sets, subsets, and code sets.

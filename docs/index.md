@@ -4,6 +4,8 @@
 
 This is a repository of codelists and phenotyping algorithms developed and used by the [Oxford-RCGP Research and Surveillance Centre](https://www.rcgp.org.uk/representing-you/research-at-rcgp/research-surveillance-centre) (RSC) based at the [Nuffield Department of Primary Care Health Sciences](https://www.phc.ox.ac.uk/) at the University of Oxford.
 
+Please feel free to [Contact us](mailto:rsc_phenotypes@phc.ox.ac.uk) if you any questions about anything in this repository. 
+
 The repository contains
 
 | Resource Section | Description |
